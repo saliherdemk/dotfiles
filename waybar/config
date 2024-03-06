@@ -22,7 +22,7 @@
     "modules-right": [
         "memory",
         "cpu",
-	    "network",
+	"network",
         "pulseaudio",
         "tray",
     ],
