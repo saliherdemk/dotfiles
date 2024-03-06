@@ -1,0 +1,29 @@
+{
+
+    "layer": "top",
+    
+    "position": "top",
+
+    "margin-left": 10,
+    "margin-bottom": 0,
+    "margin-right": 10,
+
+    "spacing": 5,
+
+    "include": ["~/.config/waybar/modules.json"],
+
+    "modules-left": [
+        "wlr/taskbar",
+        "hyprland/workspaces",
+    ],
+    "modules-center": [
+        "clock#date",
+    ],
+    "modules-right": [
+        "memory",
+        "cpu",
+	    "network",
+        "pulseaudio",
+        "tray",
+    ],
+}

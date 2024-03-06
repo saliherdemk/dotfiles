@@ -1,0 +1,100 @@
+* {
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 15px;
+  font-weight: 900;
+  padding: 0;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  margin: 0.2em 0.3em 0.2em 0.3em;
+}
+
+button{
+  all: unset
+}
+
+#waybar {
+  background-color: transparent;
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  border-radius: 0px;
+}
+
+#taskbar,
+#workspaces,
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray{
+  padding: 3px 15px;
+  color: #e5e5e5;
+  border-radius: 20px;
+  background-color: #1e1e1e;
+}
+
+#taskbar button {
+  border: 1px solid transparent;
+}
+
+#taskbar button:hover {
+  border-top: 1px solid white;
+}
+
+#workspaces button {
+  padding: 0 0px;
+  margin: 0px 3px 0px;
+
+  color: #7984a4;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+}
+
+#workspaces button:hover {
+  background: none;
+  text-shadow: none;
+  color: #c7c7c7
+}
+
+#workspaces button.active {
+  color: #fff;
+}
+
+#clock {
+  color: #c8d2e0;
+}
+
+#memory {
+  color: #ebcb8b;
+  background-color: #1e1e1e;
+}
+
+#cpu {
+  color: #fb958b;
+  background-color: #1e1e1e;
+}
+
+#network {
+  color: #b48ead;
+}
+
+#network.disconnected {
+  color: #f53c3c;
+}
+
+#pulseaudio {
+  color: #7d9bba;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #eb4d4b;
+}
+
