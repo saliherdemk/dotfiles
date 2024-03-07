@@ -1,69 +1,71 @@
-alacritty
-amd-ucode
-base
-base-devel
-blueman
-bluez-utils
-breeze
-btop
-discord
-dunst
-efibootmgr
-firefox
-git
-grub
-grub-customizer
-hyprland
-intel-media-driver
-iwd
-libpulse
-libva-intel-driver
-libva-mesa-driver
-linux
-linux-firmware
-lxappearance
-mlocate
-nano
-neofetch
-neovim
-neovim-gtk
-networkmanager
-openssh
-os-prober
-papirus-icon-theme
-pavucontrol
-pipewire
-pulseaudio
-pulseaudio-alsa
-pulseaudio-bluetooth
-qt5-wayland
-qt5ct
-qt6-wayland
-rofi
-sddm
-smartmontools
-speech-dispatcher
-thunar
-thunderbird
-unzip
-vim
-vulkan-intel
-vulkan-radeon
-waybar
-wget
-wireless_tools
-wireplumber
-wpa_supplicant
-xclip
-xdg-desktop-portal-hyprland
-xdg-utils
-xf86-video-amdgpu
-xf86-video-ati
-xf86-video-nouveau
-xf86-video-vmware
-xorg-server
-xorg-xhost
-xorg-xinit
-yay-git
-yay-git-debug
-zram-generator
+alacritty 0.13.1-1
+amd-ucode 20240220.97b693d2-1
+base 3-2
+base-devel 1-1
+blueman 2.3.5-3
+bluez-utils 5.72-2
+breeze 5.27.10-1
+btop 1.3.2-1
+discord 0.0.43-1
+dunst 1.10.0-1
+efibootmgr 18-2
+firefox 123.0.1-1
+git 2.44.0-1
+grub 2:2.12-1
+grub-customizer 5.2.4-1
+hyprland 0.35.0-2
+intel-media-driver 24.1.3-1
+iwd 2.16-1
+libpulse 17.0-3
+libva-intel-driver 2.4.1-2
+libva-mesa-driver 1:24.0.2-1
+linux 6.7.8.arch1-1
+linux-firmware 20240220.97b693d2-1
+mlocate 0.26.git.20170220-7
+nano 7.2-1
+neofetch 7.1.0-2
+neovim 0.9.5-2
+neovim-gtk 1.0.4-1
+networkmanager 1.46.0-2
+openssh 9.6p1-3
+os-prober 1.81-1
+papirus-icon-theme 20240201-1
+pavucontrol 1:5.0+r64+geba9ca6-1
+pipewire 1:1.0.3-1
+pulseaudio 17.0-3
+pulseaudio-alsa 1:1.2.7.1-2
+pulseaudio-bluetooth 17.0-3
+qt5-wayland 5.15.12+kde+r61-1
+qt5ct 1.8-1
+qt6-wayland 6.6.2-1
+rofi 1.7.5-2
+sddm 0.20.0-4
+smartmontools 7.4-1
+speech-dispatcher 0.11.5-1
+thunar 4.18.10-1
+thunderbird 115.8.0-1
+ttf-0xproto-nerd 3.1.1-1
+ttf-jetbrains-mono-nerd 3.1.1-1
+unzip 6.0-20
+vim 9.1.0080-1
+vulkan-intel 1:24.0.2-1
+vulkan-radeon 1:24.0.2-1
+waybar 0.9.24-3
+wget 1.21.4-1
+wireless_tools 30.pre9-3
+wireplumber 0.4.17-1
+wpa_supplicant 2:2.10-8
+xclip 0.13-4
+xdg-desktop-portal-hyprland 1.3.1-5
+xdg-utils 1.2.1-1
+xf86-video-amdgpu 23.0.0-1
+xf86-video-ati 1:22.0.0-1
+xf86-video-nouveau 1.0.17-2
+xf86-video-vmware 13.4.0-1
+xorg-server 21.1.11-1
+xorg-xhost 1.0.9-1
+xorg-xinit 1.4.2-1
+yay-git 12.3.0.r2.g03e89d6-1
+yay-git-debug 12.3.0.r2.g03e89d6-1
+zram-generator 1.1.2-1
+zsh-theme-powerlevel10k-git r4258.0cc19ac2-1
