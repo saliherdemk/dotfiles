@@ -1,19 +1,30 @@
 return {
-
-	{'tpope/vim-sleuth'},
+	-- Adjust indents
+	{ "tpope/vim-sleuth" },
 
 	-- Useful plugin to show you pending keybinds.
-	{ 'folke/which-key.nvim', opts = {} },
+	{ "folke/which-key.nvim", opts = {} },
 
 	{
 		-- Add indentation guides even on blank lines
-		'lukas-reineke/indent-blankline.nvim',
+		"lukas-reineke/indent-blankline.nvim",
 		-- Enable `lukas-reineke/indent-blankline.nvim`
 		-- See `:help ibl`
-		main = 'ibl',
+		main = "ibl",
 		opts = {},
 	},
 
 	-- "gc" to comment visual regions/lines
-	{ 'numToStr/Comment.nvim', opts = {} },
+	{ "numToStr/Comment.nvim", opts = {} },
+
+	{
+		"windwp/nvim-autopairs",
+		event = "InsertEnter",
+		config = true,
+	},
+	-- Hide colorColumn until one of lines in the scope exceeds the colorColumn
+	{
+		"m4xshen/smartcolumn.nvim",
+		opts = {},
+	},
 }

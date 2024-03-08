@@ -7,36 +7,81 @@ return {
 		end,
 	},
 	{
-		"williamboman/mason-lspconfig.nvim",
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
 		lazy = false,
 		opts = {
-			auto_install = true,
-		},
-	},
-	{
-		      'WhoIsSethDaniel/mason-tool-installer.nvim',
-		lazy = false,
-		opts = {
-		auto_update = false,
+			auto_update = false,
 			start_delay = 3000,
 			debounce_hours = 24,
 		},
-		},
+	},
 	{
 		"neovim/nvim-lspconfig",
+		event = { "BufReadPre", "BufNewFile" },
 		lazy = false,
+		dependencies = {
+			{
+				"williamboman/mason-lspconfig.nvim",
+				lazy = false,
+				opts = {
+					automatic_installation = true,
+				},
+			},
+		},
 		config = function()
-			local capabilities = require('cmp_nvim_lsp').default_capabilities()
+			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 			local lspconfig = require("lspconfig")
-			lspconfig.tsserver.setup({
-				capabilities = capabilities
+
+			lspconfig["html"].setup({
+				capabilities = capabilities,
 			})
-			lspconfig.html.setup({
-				capabilities = capabilities
+
+			lspconfig["tsserver"].setup({
+				capabilities = capabilities,
 			})
-			lspconfig.lua_ls.setup({
-				capabilities = capabilities
+
+			lspconfig["cssls"].setup({
+				capabilities = capabilities,
+			})
+
+			lspconfig["tailwindcss"].setup({
+				capabilities = capabilities,
+			})
+			lspconfig["emmet_ls"].setup({
+				capabilities = capabilities,
+				filetypes = {
+					"html",
+					"typescriptreact",
+					"javascriptreact",
+					"css",
+					"sass",
+					"scss",
+					"less",
+					"svelte",
+				},
+			})
+
+			lspconfig["jedi_language_server"].setup({
+				capabilities = capabilities,
+			})
+
+			lspconfig["emmet_ls"].setup({
+				capabilities = capabilities,
+				filetypes = {
+					"html",
+					"typescriptreact",
+					"javascriptreact",
+					"css",
+					"sass",
+					"scss",
+					"less",
+					"svelte",
+				},
+			})
+
+			lspconfig["lua_ls"].setup({
+				capabilities = capabilities,
 			})
 		end,
 	},
