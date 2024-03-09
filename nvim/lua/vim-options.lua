@@ -1,3 +1,7 @@
+-- disable netrw at the very start of your init.lua
+-- vim.g.loaded_netrw = 1
+-- vim.g.loaded_netrwPlugin = 1
+
 vim.opt.number = true
 
 vim.opt.relativenumber = true
@@ -8,7 +12,7 @@ vim.opt.breakindent = true
 
 vim.opt.smartindent = true
 
-vim.opt.undofile = true
+vim.opt.undofile = false
 
 -- Case-insensitive searching UNLESS \C or capital in search
 vim.opt.ignorecase = true
@@ -23,16 +27,10 @@ vim.opt.scrolloff = 10
 
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
-vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
-
-vim.keymap.set("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')
-vim.keymap.set("n", "<right>", '<cmd>echo "Use l to move!!"<CR>')
-vim.keymap.set("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
-vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
-vim.shiftwidth = 4
+vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
 vim.opt.swapfile = false

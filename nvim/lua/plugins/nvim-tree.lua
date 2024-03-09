@@ -12,11 +12,11 @@ return {
 			local function opts(desc)
 				return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
 			end
-
 			api.config.mappings.default_on_attach(bufnr)
 
-			vim.keymap.set("n", "ttg", api.tree.toggle_gitignore_filter, opts("Toggle Filter: Git Ignore"))
-			vim.keymap.set("n", "ttd", api.tree.toggle_hidden_filter, opts("Toggle Filter: Dotfiles"))
+			vim.keymap.set("n", "<Space>tg", api.tree.toggle_gitignore_filter, opts("Toggle Filter: Git Ignore"))
+			vim.keymap.set("n", "<leader>td", api.tree.toggle_hidden_filter, opts("Toggle Filter: Dotfiles"))
+			-- vim.keymap.set("n", "<leader>p", api.toggle)
 		end
 		require("nvim-tree").setup({
 			on_attach = my_on_attach,
@@ -28,30 +28,13 @@ return {
 			},
 			sort = {
 				sorter = "case_sensitive",
+				folders_first = true,
+				files_first = false,
 			},
-			-- git = {
-			-- 	enable = true,
-			-- 	ingore = false,
-			-- 	timeout = 500,
-			-- },
 			renderer = {
-				-- add_trailing = false,
 				group_empty = true,
-				-- highlight_git = true,
-				-- full_name = false,
 				highlight_opened_files = "all",
-				-- root_folder_label = ":t",
-				-- indent_width = 2,
-				-- indent_markers = {
-				-- 	enable = false,
-				-- 	inline_arrows = true,
-				-- 	icons = {
-				-- 		corner = "└",
-				-- 		edge = "│",
-				-- 		item = "│",
-				-- 		none = " ",
-				-- 	},
-				-- },
+
 				icons = {
 					git_placement = "before",
 					padding = " ",
@@ -60,16 +43,6 @@ return {
 						default = "",
 						symlink = "",
 						bookmark = "",
-						-- folder = {
-						-- 	arrow_closed = "",
-						-- 	arrow_open = "",
-						-- 	default = "󰉋",
-						-- 	open = "",
-						-- 	empty = "",
-						-- 	empty_open = icons.ui.EmptyFolderOpen,
-						-- 	symlink = icons.ui.FolderSymlink,
-						-- 	symlink_open = icons.ui.FolderOpen,
-						-- },
 						git = {
 							unstaged = "",
 							staged = "S",
@@ -85,7 +58,7 @@ return {
 				symlink_destination = true,
 			},
 			filters = {
-				git_ignored = false,
+				git_ignored = true,
 				dotfiles = false,
 				git_clean = false,
 				no_buffer = false,

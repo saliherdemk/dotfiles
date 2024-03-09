@@ -27,4 +27,5 @@ return {
 		"m4xshen/smartcolumn.nvim",
 		opts = {},
 	},
+	{ "akinsho/toggleterm.nvim", version = "*", config = true },
 }

@@ -15,4 +15,5 @@ return {
 			},
 		},
 	},
+	{ "sindrets/diffview.nvim" },
 }
