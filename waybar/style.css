@@ -8,7 +8,7 @@
   margin: 0.2em 0.3em 0.2em 0.3em;
 }
 
-button{
+button {
   all: unset
 }
 
@@ -20,21 +20,32 @@ button{
   border-radius: 0px;
 }
 
-#taskbar,
 #workspaces,
 #clock,
 #cpu,
 #memory,
 #network,
 #pulseaudio,
-#tray{
+#tray {
   padding: 3px 15px;
   color: #e5e5e5;
   border-radius: 20px;
   background-color: #1e1e1e;
 }
 
+#taskbar button:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#taskbar button:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
 #taskbar button {
+  padding: 3px 5px;
+  background-color: #1e1e1e;
   border: 1px solid transparent;
 }
 
@@ -89,12 +100,11 @@ button{
   color: #7d9bba;
 }
 
-#tray > .passive {
+#tray>.passive {
   -gtk-icon-effect: dim;
 }
 
-#tray > .needs-attention {
+#tray>.needs-attention {
   -gtk-icon-effect: highlight;
   background-color: #eb4d4b;
 }
-

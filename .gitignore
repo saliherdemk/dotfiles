@@ -12,3 +12,5 @@ user-dirs.dirs
 user-dirs.locale
 neofetch
 nvim-gtk
+cef_user_data
+ibus
