@@ -6,6 +6,7 @@ blueman 2.3.5-3
 bluez-utils 5.72-2
 breeze 6.0.1-3
 btop 1.3.2-1
+cropgui 0.7-1
 discord 0.0.44-1
 dunst 1.10.0-1
 efibootmgr 18-2
@@ -14,6 +15,7 @@ git 2.44.0-1
 grub 2:2.12-1
 grub-customizer 5.2.4-1
 hyprland 0.35.0-2
+hyprlock-git 0.1.0.r45.g160fe355-1
 intel-media-driver 24.1.3-1
 iwd 2.16-1
 libpulse 17.0-3
@@ -29,6 +31,7 @@ neovim-gtk 1.0.4-1
 networkmanager 1.46.0-2
 nodejs 21.7.0-1
 npm 10.5.0-1
+nsxiv 32-4
 openssh 9.6p1-3
 os-prober 1.81-1
 papirus-icon-theme 20240201-1
@@ -42,6 +45,7 @@ qt5ct 1.8-1
 qt6-wayland 6.6.2-1
 rofi 1.7.5-2
 sddm 0.21.0-4
+simplicity-sddm-theme-git r87-1
 smartmontools 7.4-1
 speech-dispatcher 0.11.5-1
 steam 1.0.0.78-2
@@ -51,6 +55,7 @@ ttf-0xproto-nerd 3.1.1-1
 ttf-jetbrains-mono-nerd 3.1.1-1
 unzip 6.0-20
 vim 9.1.0151-2
+vlc 3.0.20-7
 vulkan-intel 1:24.0.2-2
 vulkan-radeon 1:24.0.2-2
 waybar 0.9.24-3
