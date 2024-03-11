@@ -16,7 +16,6 @@ grub-customizer
 hyprland
 intel-media-driver
 iwd
-jack2
 libpulse
 libva-intel-driver
 libva-mesa-driver
@@ -60,6 +59,7 @@ waybar
 wget
 wireless_tools
 wireplumber
+wpa_supplicant
 xclip
 xdg-desktop-portal
 xdg-desktop-portal-hyprland
