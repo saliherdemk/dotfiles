@@ -1,0 +1,6 @@
+cropgui
+hyprlock-git
+simplicity-sddm-theme-git
+yay-git
+yay-git-debug
+zsh-theme-powerlevel10k-git
