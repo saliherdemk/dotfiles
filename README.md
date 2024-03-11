@@ -36,7 +36,7 @@ then change theme name to `simplicity` on `/usr/lib/sddm/sddm.conf.d/default.con
 # zsh
 Move `.p10k.zsh` to ``~/.p10k.zsh``
 
-Move `powerlevel10k.zsh-theme` to `/usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme` 
+Move `zsh-theme-powerlevel10k` to `/usr/share/zsh-theme-powerlevel10k/`
 
 And
 
