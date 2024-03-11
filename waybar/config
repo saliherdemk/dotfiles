@@ -24,6 +24,7 @@
         "cpu",
 	"network",
         "pulseaudio",
+        "battery",
         "tray",
     ],
 }
