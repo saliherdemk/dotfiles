@@ -13,6 +13,7 @@ firefox
 git
 grub
 grub-customizer
+gst-plugin-pipewire
 hyprland
 intel-media-driver
 iwd
@@ -25,15 +26,16 @@ mlocate
 nano
 neofetch
 neovim
+network-manager-applet
 networkmanager
 nodejs
 npm
 nsxiv
-openssh
 os-prober
 papirus-icon-theme
 pavucontrol
 pipewire
+pipewire-jack
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
@@ -58,7 +60,6 @@ waybar
 wget
 wireless_tools
 wireplumber
-wpa_supplicant
 xclip
 xdg-desktop-portal-hyprland
 xdg-utils

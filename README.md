@@ -25,7 +25,7 @@ pacman -S - < pkglist.txt
 ```
 And
 ```
-yay -S - <yaylist.txt
+yay -S - < yaylist.txt
 ```
 
 # sddm
@@ -41,4 +41,14 @@ Move `zsh-theme-powerlevel10k` to `/usr/share/zsh-theme-powerlevel10k/`
 And
 
 Move `.zshrc` to `~/.zshrc`
+
+Dont' forget to change default bash
+
+```
+chsh
+```
+
+```
+/usr/bin/zsh
+```
 
