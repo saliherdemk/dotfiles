@@ -26,12 +26,30 @@ button {
 #memory,
 #network,
 #pulseaudio,
-#brighttery,
 #tray {
   padding: 3px 15px;
   color: #e5e5e5;
   border-radius: 20px;
   background-color: #1e1e1e;
+}
+
+#battery,
+#backlight {
+  color: #e5e5e5;
+  background-color: #1e1e1e;
+  margin: 0;
+}
+
+#battery {
+  padding: 3px 5px 3px 15px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#backlight {
+  padding: 3px 15px 3px 5px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 #taskbar button:first-child {
