@@ -56,6 +56,7 @@ waybar
 wget
 wireless_tools
 wireplumber
+wl-clipboard
 xclip
 xdg-desktop-portal
 xdg-desktop-portal-hyprland
