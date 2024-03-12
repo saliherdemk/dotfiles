@@ -1,4 +1,5 @@
 cropgui
+hypridle
 hyprlock-git
 simplicity-sddm-theme-git
 yay-git
