@@ -59,6 +59,7 @@ waybar
 wget
 wireless_tools
 wireplumber
+wl-clipboard
 wpa_supplicant
 xclip
 xdg-desktop-portal

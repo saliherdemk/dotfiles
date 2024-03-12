@@ -33,6 +33,10 @@ button {
   background-color: #1e1e1e;
 }
 
+#brighttery {
+  margin: 0;
+}
+
 #battery,
 #backlight {
   color: #e5e5e5;
