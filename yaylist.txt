@@ -1,6 +1,7 @@
 cropgui
 hypridle
 hyprlock-git
+pulseaudio-ctl
 simplicity-sddm-theme-git
 yay-git
 zsh-theme-powerlevel10k-git

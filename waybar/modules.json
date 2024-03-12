@@ -5,9 +5,7 @@
     "tooltip-format": "{title}",
     "on-click": "activate",
     "on-click-middle": "close",
-    "ignore-list": [
-      "Alacritty"
-    ]
+    "ignore-list": ["Alacritty"]
   },
   "hyprland/workspaces": {
     "on-click": "activate",
@@ -38,29 +36,24 @@
     "format-alt": "{ifname}: {ipaddr}/{cidr}",
     "tooltip-format": " {bandwidthUpBits}  {bandwidthDownBits}\n{ifname}\n{ipaddr}/{cidr}\n",
     "tooltip-format-wifi": "  {essid} {frequency}MHz\nStrength: {signaldBm}dBm ({signalStrength}%)\nIP: {ipaddr}/{cidr}\n {bandwidthUpBits}  {bandwidthDownBits}",
-    "max-length": 14
+    "max-length": 14,
+    "min-length": 7
   },
   "pulseaudio": {
     "scroll-step": 3,
-    "format": "{icon} {volume}% {format_source}",
-    "ignored-sinks": [
-      "Easy Effects Sink"
-    ],
+    "format": "{volume}% {format_source}",
+    "ignored-sinks": ["Easy Effects Sink"],
     "max-volume": 150,
+    "format-muted": "0% <span color='#7d9bba'>{format_source}</span>",
     "format-source": "",
     "format-source-muted": "",
     "on-click": "pavucontrol",
     "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
   },
   "backlight": {
-    "device": "intel_backlight",
+    "device": "amdgpu_bl1",
     "format": "{percent}% {icon}",
-    "format-icons": [
-      "󰃞",
-      "󰃝",
-      "󰃟",
-      "󰃠"
-    ]
+    "format-icons": ["󰃞", "󰃝", "󰃟", "󰃠"]
   },
   "battery": {
     "states": {
@@ -71,20 +64,11 @@
     "format-charging": "  {capacity}%",
     "format-plugged": "  {capacity}%",
     "format-alt": "{icon}  {time}",
-    "format-icons": [
-      " ",
-      " ",
-      " ",
-      " ",
-      " "
-    ]
+    "format-icons": [" ", " ", " ", " ", " "]
   },
   "group/brighttery": {
     "orientation": "horizontal",
-    "modules": [
-      "battery",
-      "backlight"
-    ]
+    "modules": ["battery", "backlight"]
   },
   "tray": {
     "icon-size": 15,

@@ -101,6 +101,10 @@ button {
   color: #7d9bba;
 }
 
+#pulseaudio.muted {
+  color: #f53c3c;
+}
+
 #battery {
   font-size: 14px;
   color: #ffffff;
