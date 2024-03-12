@@ -11,10 +11,26 @@
     "on-click": "activate",
     "active-only": false
   },
-  "clock#date": {
-    "format": "  {:%H:%M   %e %B %Y}",
+  "clock": {
+    "format": "{:%H:%M}",
+    "format-alt": "{:%e %B %Y}",
     "timezone": "Europe/Istanbul",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "format": {
+        "today": "<span color='#ff6699'><b>{}</b></span>"
+      }
+    }
+  },
+  "clock#date": {
+    "format": "  {:%H:%M    %e %B %Y}",
+    "timezone": "Europe/Istanbul",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "format": {
+        "today": "<span color='#ff6699'><b>{}</b></span>"
+      }
+    }
   },
   "memory": {
     "interval": 10,

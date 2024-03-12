@@ -17,7 +17,8 @@
         "hyprland/workspaces",
     ],
     "modules-center": [
-        "clock#date",
+        "clock"
+        //"clock#date",
     ],
     "modules-right": [
         "memory",
