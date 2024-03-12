@@ -66,21 +66,11 @@ return {
 				capabilities = capabilities,
 			})
 
-			lspconfig["emmet_ls"].setup({
+			lspconfig["lua_ls"].setup({
 				capabilities = capabilities,
-				filetypes = {
-					"html",
-					"typescriptreact",
-					"javascriptreact",
-					"css",
-					"sass",
-					"scss",
-					"less",
-					"svelte",
-				},
 			})
 
-			lspconfig["lua_ls"].setup({
+			lspconfig["jsonls"].setup({
 				capabilities = capabilities,
 			})
 		end,

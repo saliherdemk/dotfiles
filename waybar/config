@@ -22,9 +22,9 @@
     "modules-right": [
         "memory",
         "cpu",
-	"network",
+        "network",
         "pulseaudio",
-        "battery",
+        "group/brighttery",
         "tray",
     ],
 }
