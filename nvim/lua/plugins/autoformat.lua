@@ -13,6 +13,7 @@ return {
 				python = { "isort", "black" },
 				javascript = { "prettierd" },
 				json = { "prettierd" },
+				html = { "prettierd" },
 			},
 		},
 	},

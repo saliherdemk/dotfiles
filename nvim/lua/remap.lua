@@ -1,6 +1,3 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
 vim.g.have_nerd_font = true
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
@@ -37,6 +34,14 @@ vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 
 vim.keymap.set("n", "<leader>do", ":DiffviewOpen<CR>")
 vim.keymap.set("n", "<leader>dc", ":DiffviewClose<CR>")
+
+local builtin = require("telescope.builtin")
+vim.keymap.set("n", "<C-p>", builtin.find_files, {})
+vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
+
+local api = require("nvim-tree.api")
+vim.keymap.set("n", "<Space>tg", api.tree.toggle_gitignore_filter)
+vim.keymap.set("n", "<leader>td", api.tree.toggle_hidden_filter)
 
 function _G.set_terminal_keymaps()
 	local opts = { buffer = 0 }
