@@ -26,7 +26,6 @@ nano
 neofetch
 neovim
 network-manager-applet
-networkmanager
 nodejs
 npm
 nsxiv
