@@ -48,19 +48,19 @@ return {
 			lspconfig["tailwindcss"].setup({
 				capabilities = capabilities,
 			})
-			lspconfig["emmet_ls"].setup({
-				capabilities = capabilities,
-				filetypes = {
-					"html",
-					"typescriptreact",
-					"javascriptreact",
-					"css",
-					"sass",
-					"scss",
-					"less",
-					"svelte",
-				},
-			})
+			-- lspconfig["emmet_ls"].setup({
+			-- 	capabilities = capabilities,
+			-- 	filetypes = {
+			-- 		"html",
+			-- 		"typescriptreact",
+			-- 		"javascriptreact",
+			-- 		"css",
+			-- 		"sass",
+			-- 		"scss",
+			-- 		"less",
+			-- 		"svelte",
+			-- 	},
+			-- })
 
 			lspconfig["jedi_language_server"].setup({
 				capabilities = capabilities,
