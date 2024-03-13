@@ -12,6 +12,7 @@ dunst
 efibootmgr
 firefox
 git
+hugo
 hyprland
 iwd
 jack2

@@ -72,13 +72,14 @@
     "format-icons": ["󰃞", "󰃝", "󰃟", "󰃠"]
   },
   "battery": {
+    "interval": 5,
     "states": {
       "warning": 30,
       "critical": 15
     },
     "format": "{icon} {capacity}%",
     "format-alt": "{icon} {time}",
-    "format-icons": [" ", " ", " ", " ", " "]
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂"]
   },
   "group/brighttery": {
     "orientation": "horizontal",
