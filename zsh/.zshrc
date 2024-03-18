@@ -4,7 +4,7 @@
 
 neofetch
 
-alias show='nsxiv'
+alias show='swappy'
 alias edit='cropgui'
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then

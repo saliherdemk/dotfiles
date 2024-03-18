@@ -9,8 +9,10 @@ btop
 discord
 dunst
 efibootmgr
+fd
 firefox
 git
+grim
 grub
 grub-customizer
 hyprland
@@ -28,7 +30,6 @@ neovim
 network-manager-applet
 nodejs
 npm
-nsxiv
 os-prober
 papirus-icon-theme
 pavucontrol
@@ -40,11 +41,14 @@ pulseaudio-jack
 qt5-wayland
 qt5ct
 qt6-wayland
+ripgrep
 rofi
 sddm
+slurp
 smartmontools
 speech-dispatcher
 steam
+swappy
 thunar
 thunderbird
 ttf-0xproto-nerd
