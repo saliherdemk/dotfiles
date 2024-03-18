@@ -12,6 +12,7 @@ dunst
 efibootmgr
 firefox
 git
+grim
 hugo
 hyprland
 iwd
@@ -26,7 +27,6 @@ neovim
 network-manager-applet
 nodejs
 npm
-nsxiv
 os-prober
 papirus-icon-theme
 pavucontrol
@@ -40,9 +40,11 @@ qt5ct
 qt6-wayland
 rofi
 sddm
+slurp
 smartmontools
 speech-dispatcher
 steam
+swappy
 thunar
 thunderbird
 ttf-0xproto-nerd
