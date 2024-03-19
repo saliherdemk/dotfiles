@@ -27,7 +27,15 @@ return {
 		"m4xshen/smartcolumn.nvim",
 		opts = {},
 	},
-	{ "akinsho/toggleterm.nvim", version = "*", config = true },
+	{
+		"akinsho/toggleterm.nvim",
+		version = "*",
+		config = function()
+			require("toggleterm").setup({
+				direction = "float",
+			})
+		end,
+	},
 	{
 		"iamcco/markdown-preview.nvim",
 		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
