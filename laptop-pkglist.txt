@@ -30,6 +30,7 @@ npm
 os-prober
 papirus-icon-theme
 pavucontrol
+plasma-meta
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth

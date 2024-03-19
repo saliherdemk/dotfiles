@@ -3,5 +3,6 @@ hypridle
 hyprlock-git
 pulseaudio-ctl
 simplicity-sddm-theme-git
-yay-git
+yay
+youtube-music-bin
 zsh-theme-powerlevel10k-git
