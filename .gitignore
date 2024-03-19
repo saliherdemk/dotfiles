@@ -15,9 +15,6 @@ nvim-gtk
 cef_user_data
 ibus
 vlc
-<<<<<<< HEAD
-xfce4/xfconf
-=======
 gtk-4.0
 KDE
 kde*
@@ -38,4 +35,3 @@ plasma*
 powermanagementprofilesrc
 systemsettingsrc
 YouTube Music
->>>>>>> 61bcb22 (laptop configs updated)
