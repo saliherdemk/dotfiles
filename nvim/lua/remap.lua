@@ -49,7 +49,20 @@ vim.keymap.set("v", "<leader>cf", ":CopilotChatFix<CR>")
 vim.keymap.set("n", "<leader>cd", ":CopilotChatDocs<CR>")
 vim.keymap.set("v", "<leader>co", ":CopilotChatOptimize<CR>")
 
-vim.api.nvim_set_keymap("n", "<M->", "<C-w>>", { noremap = true })
-vim.api.nvim_set_keymap("n", "<M-<", "<C-w><", { noremap = true })
+vim.api.nvim_set_keymap("n", "<M-Right>", "<C-w>l", { noremap = true })
+vim.api.nvim_set_keymap("n", "<M-Left>", "<C-w>h", { noremap = true })
+vim.api.nvim_set_keymap("n", "<M-Up>", "<C-w>k", { noremap = true })
+vim.api.nvim_set_keymap("n", "<M-Down>", "<C-w>j", { noremap = true })
+
+vim.api.nvim_set_keymap("n", "<M-,>", "<C-w><", { noremap = true })
+vim.api.nvim_set_keymap("n", "<M-.>", "<C-w>>", { noremap = true })
 
 vim.api.nvim_set_keymap("n", "<M-q>", "<C-w>q", { noremap = true })
+
+function _G.set_terminal_keymaps()
+	local opts = { buffer = 0 }
+	vim.keymap.set("t", "<esc>", [[<C-\><C-n>]], opts)
+	vim.keymap.set("t", "<C-w>", [[<C-\><C-n><C-w>]], opts)
+end
+
+vim.cmd("autocmd! TermOpen term://* lua set_terminal_keymaps()")
