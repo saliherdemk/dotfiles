@@ -51,3 +51,14 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	group = vim.api.nvim_create_augroup("YankHighlight", { clear = true }),
 	pattern = "*",
 })
+
+vim.api.nvim_create_autocmd("ColorScheme", {
+	callback = function()
+		local highlights = {
+			"Normal",
+		}
+		for _, name in pairs(highlights) do
+			vim.cmd.highlight(name .. " guibg=none ctermbg=none")
+		end
+	end,
+})

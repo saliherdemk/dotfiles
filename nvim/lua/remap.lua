@@ -19,8 +19,6 @@ vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
 
 vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
 
-vim.keymap.set("n", "<C-t>", ":TransparentToggle<CR>", { noremap = true })
-
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<cr>")
 
 vim.keymap.set("n", "<leader>n", ":ToggleTerm<cr>")
@@ -43,10 +41,15 @@ local api = require("nvim-tree.api")
 vim.keymap.set("n", "<Space>tg", api.tree.toggle_gitignore_filter)
 vim.keymap.set("n", "<leader>td", api.tree.toggle_hidden_filter)
 
-function _G.set_terminal_keymaps()
-	local opts = { buffer = 0 }
-	vim.keymap.set("t", "<esc>", [[<C-\><C-n>]], opts)
-	vim.keymap.set("t", "<C-w>", [[<C-\><C-n><C-w>]], opts)
-end
+vim.keymap.set("n", "<leader>b", ":vsplit<CR>")
 
-vim.cmd("autocmd! TermOpen term://* lua set_terminal_keymaps()")
+vim.keymap.set("n", "<leader>ct", ":CopilotChatToggle<CR>")
+vim.keymap.set("v", "<leader>ce", ":CopilotChatExplain<CR>")
+vim.keymap.set("v", "<leader>cf", ":CopilotChatFix<CR>")
+vim.keymap.set("n", "<leader>cd", ":CopilotChatDocs<CR>")
+vim.keymap.set("v", "<leader>co", ":CopilotChatOptimize<CR>")
+
+vim.api.nvim_set_keymap("n", "<M->", "<C-w>>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<M-<", "<C-w><", { noremap = true })
+
+vim.api.nvim_set_keymap("n", "<M-q>", "<C-w>q", { noremap = true })
