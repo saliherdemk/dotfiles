@@ -36,4 +36,6 @@ powermanagementprofilesrc
 systemsettingsrc
 YouTube Music
 xfce4/xfconf
+xfce4/help.rc
+gtk-3.0/bookmarks
 github*

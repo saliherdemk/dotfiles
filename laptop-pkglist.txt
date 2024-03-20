@@ -13,7 +13,10 @@ efibootmgr
 firefox
 git
 grim
+gvfs
+gvfs-mtp
 hugo
+hypridle
 hyprland
 iwd
 jack2
@@ -39,6 +42,7 @@ pulseaudio-jack
 qt5-wayland
 qt5ct
 qt6-wayland
+ripgrep
 rofi
 sddm
 slurp
@@ -47,6 +51,7 @@ speech-dispatcher
 steam
 swappy
 thunar
+thunar-volman
 thunderbird
 ttf-0xproto-nerd
 ttf-jetbrains-mono-nerd

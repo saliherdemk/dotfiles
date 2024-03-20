@@ -1,5 +1,4 @@
 cropgui
-hypridle
 hyprlock-git
 pulseaudio-ctl
 simplicity-sddm-theme-git
