@@ -5,7 +5,9 @@ base-devel
 blueman
 bluez-utils
 breeze
+brightnessctl
 btop
+cpupower
 discord
 dunst
 efibootmgr
@@ -15,9 +17,14 @@ git
 grim
 grub
 grub-customizer
+gvfs
+gvfs-mtp
+hugo
+hypridle
 hyprland
 intel-media-driver
 iwd
+jack2
 libpulse
 libva-intel-driver
 libva-mesa-driver
@@ -49,6 +56,7 @@ speech-dispatcher
 steam
 swappy
 thunar
+thunar-volman
 thunderbird
 ttf-0xproto-nerd
 ttf-jetbrains-mono-nerd
@@ -62,7 +70,6 @@ wget
 wireless_tools
 wireplumber
 wl-clipboard
-wpa_supplicant
 xclip
 xdg-desktop-portal
 xdg-desktop-portal-hyprland

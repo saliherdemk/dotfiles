@@ -1,3 +1,4 @@
+cpupower-gui-git
 cropgui
 hyprlock-git
 pulseaudio-ctl
