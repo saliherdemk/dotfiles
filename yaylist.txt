@@ -1,7 +1,9 @@
 cropgui
 hyprlock-git
 pulseaudio-ctl
+rofi-lbonn-wayland-git
 simplicity-sddm-theme-git
 yay
+yay-debug
 youtube-music-bin
 zsh-theme-powerlevel10k-git

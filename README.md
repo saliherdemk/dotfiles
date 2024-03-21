@@ -27,7 +27,15 @@ pacman -Syu
 ```
 pacman -S - < pkglist.txt
 ```
+
 And
+
+```
+pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+```
+
+then
+
 ```
 yay -S - < yaylist.txt
 ```
