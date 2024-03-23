@@ -12,6 +12,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+vim.g.python3_host_prog = '~/arcsim-0.2.1/venv/bin/python'
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 

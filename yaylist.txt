@@ -2,9 +2,9 @@ cpupower-gui-git
 cropgui
 hyprlock-git
 pulseaudio-ctl
+pyenv-virtualenv
 rofi-lbonn-wayland-git
 simplicity-sddm-theme-git
 yay
-yay-debug
 youtube-music-bin
 zsh-theme-powerlevel10k-git
