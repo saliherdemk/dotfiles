@@ -62,7 +62,7 @@ return {
 			-- 	},
 			-- })
 
-			lspconfig["jedi_language_server"].setup({
+			lspconfig["pyright"].setup({
 				capabilities = capabilities,
 			})
 

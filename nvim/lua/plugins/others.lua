@@ -64,5 +64,16 @@ return {
 		},
 		-- See Commands section for default commands if you want to lazy load on them
 	},
-	{ "stevearc/dressing.nvim" }
+	{ "stevearc/dressing.nvim" },
+	{
+		"linux-cultist/venv-selector.nvim",
+		dependencies = { "neovim/nvim-lspconfig", "nvim-telescope/telescope.nvim", "mfussenegger/nvim-dap-python" },
+		opts = {
+			name = { "venv", ".venv", "venv1", ".venv1" },
+			auto_refresh = true,
+			enable_debug_output = true,
+			parents = 0,
+		},
+		event = "VeryLazy", -- Optional: needed only if you want to type `:VenvSelect` without a keymapping
+	},
 }

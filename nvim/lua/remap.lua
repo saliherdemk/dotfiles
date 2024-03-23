@@ -59,6 +59,8 @@ vim.api.nvim_set_keymap("n", "<M-.>", "<C-w>>", { noremap = true })
 
 vim.api.nvim_set_keymap("n", "<M-q>", "<C-w>q", { noremap = true })
 
+vim.api.nvim_set_keymap("n", "<C-l>", ":VenvSelect<CR>", { noremap = true })
+
 function _G.set_terminal_keymaps()
 	local opts = { buffer = 0 }
 	vim.keymap.set("t", "<esc>", [[<C-\><C-n>]], opts)
