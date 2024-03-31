@@ -21,8 +21,6 @@ vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
 
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<cr>")
 
-vim.keymap.set("n", "<leader>n", ":ToggleTerm<cr>")
-
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 vim.keymap.set("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')
@@ -38,7 +36,7 @@ vim.keymap.set("n", "<C-p>", builtin.find_files, {})
 vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
 
 local api = require("nvim-tree.api")
-vim.keymap.set("n", "<Space>tg", api.tree.toggle_gitignore_filter)
+vim.keymap.set("n", "<leader>tg", api.tree.toggle_gitignore_filter)
 vim.keymap.set("n", "<leader>td", api.tree.toggle_hidden_filter)
 
 vim.keymap.set("n", "<leader>b", ":vsplit<CR>")

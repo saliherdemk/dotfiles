@@ -28,15 +28,6 @@ return {
 		opts = {},
 	},
 	{
-		"akinsho/toggleterm.nvim",
-		version = "*",
-		config = function()
-			require("toggleterm").setup({
-				direction = "horizontal",
-			})
-		end,
-	},
-	{
 		"iamcco/markdown-preview.nvim",
 		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
 		ft = { "markdown" },
@@ -50,7 +41,12 @@ return {
 		cmd = { "LiveServerStart", "LiveServerStop" },
 		config = true,
 	},
-	{ "github/copilot.vim" },
+	{
+		"github/copilot.vim",
+		config = function()
+			require("copilot").setup({})
+		end,
+	},
 	{
 		"CopilotC-Nvim/CopilotChat.nvim",
 		branch = "canary",

@@ -10,7 +10,7 @@ return {
 			},
 			formatters_by_ft = {
 				lua = { "stylua" },
-				python = { "isort", "black" },
+				python = { "pyright", "isort", "black" },
 				javascript = { "prettierd" },
 				json = { "prettierd" },
 				html = { "prettierd" },
