@@ -51,6 +51,12 @@ Add simplicity theme to `/usr/share/sddm/themes/ `
 
 then change theme name to `simplicity` on `/usr/lib/sddm/sddm.conf.d/default.conf`
 
+# Cura
+Change Exec line on `/usr/share/applications/com.ultimaker.cura.desktop` to 
+```
+Exec=UltiMaker-Cura -platformtheme gtk3
+```
+
 # zsh
 Move `.p10k.zsh` to ``~/.p10k.zsh``
 
