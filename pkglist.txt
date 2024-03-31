@@ -1,5 +1,6 @@
 alacritty
 amd-ucode
+baobab
 base
 base-devel
 blueman
@@ -26,7 +27,6 @@ hyprland
 hyprpaper
 intel-media-driver
 iwd
-jack2
 libpulse
 libreoffice-fresh
 libva-intel-driver
@@ -40,6 +40,7 @@ neovim
 network-manager-applet
 nodejs
 npm
+obs-studio
 os-prober
 papirus-icon-theme
 pavucontrol
@@ -48,10 +49,12 @@ pulseaudio-alsa
 pulseaudio-bluetooth
 pulseaudio-equalizer
 pulseaudio-jack
+python-pip
 qt5-wayland
 qt5ct
 qt6-wayland
 ripgrep
+scons
 sddm
 slurp
 smartmontools
@@ -72,6 +75,7 @@ wget
 wireless_tools
 wireplumber
 wl-clipboard
+wpa_supplicant
 xclip
 xdg-desktop-portal
 xdg-desktop-portal-hyprland
