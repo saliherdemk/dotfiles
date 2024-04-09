@@ -2,7 +2,9 @@ appimagelauncher-bin
 cpupower-gui-git
 cropgui
 cura-bin
+docker-desktop
 hyprlock-git
+hyprpicker
 pulseaudio-ctl
 pyenv-virtualenv
 rofi-lbonn-wayland-git

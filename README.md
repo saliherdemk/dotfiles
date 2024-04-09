@@ -76,3 +76,7 @@ chsh
 /usr/bin/zsh
 ```
 
+# Future References
+[gnome-disk-utility](https://archlinux.org/packages/extra/x86_64/gnome-disk-utility/) for manipulating `fstab`
+
+[gparted](https://archlinux.org/packages/extra/x86_64/gparted/) for partitioning

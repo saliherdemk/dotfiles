@@ -45,6 +45,7 @@ obs-studio
 os-prober
 papirus-icon-theme
 pavucontrol
+polkit-kde-agent
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
@@ -88,4 +89,5 @@ xorg-server
 xorg-xhost
 xorg-xinit
 ydotool
+zip
 zram-generator
