@@ -39,8 +39,6 @@ local api = require("nvim-tree.api")
 vim.keymap.set("n", "<leader>tg", api.tree.toggle_gitignore_filter)
 vim.keymap.set("n", "<leader>td", api.tree.toggle_hidden_filter)
 
-vim.keymap.set("n", "<leader>b", ":vsplit<CR>")
-
 vim.keymap.set("n", "<leader>ct", ":CopilotChatToggle<CR>")
 vim.keymap.set("v", "<leader>ce", ":CopilotChatExplain<CR>")
 vim.keymap.set("v", "<leader>cf", ":CopilotChatFix<CR>")
@@ -58,6 +56,11 @@ vim.api.nvim_set_keymap("n", "<M-.>", "<C-w>>", { noremap = true })
 vim.api.nvim_set_keymap("n", "<M-q>", "<C-w>q", { noremap = true })
 
 vim.api.nvim_set_keymap("n", "<C-l>", ":VenvSelect<CR>", { noremap = true })
+
+vim.api.nvim_set_keymap("n", "<leader>n", ":vsplit<CR>:term<CR>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<leader>b", ":split<CR>:term<CR>", { noremap = true })
+
+vim.api.nvim_set_keymap("n", "<leader>x", ":q<CR>", { noremap = true })
 
 function _G.set_terminal_keymaps()
 	local opts = { buffer = 0 }
