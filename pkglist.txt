@@ -13,6 +13,7 @@ discord
 dunst
 efibootmgr
 fd
+file-roller
 firefox
 gifsicle
 git
@@ -27,7 +28,6 @@ hyprland
 hyprpaper
 intel-media-driver
 iwd
-jack2
 libpulse
 libreoffice-fresh
 libva-intel-driver
@@ -63,6 +63,7 @@ smartmontools
 speech-dispatcher
 steam
 thunar
+thunar-archive-plugin
 thunar-volman
 thunderbird
 ttf-0xproto-nerd
@@ -77,6 +78,7 @@ wget
 wireless_tools
 wireplumber
 wl-clipboard
+wpa_supplicant
 xclip
 xdg-desktop-portal
 xdg-desktop-portal-hyprland
