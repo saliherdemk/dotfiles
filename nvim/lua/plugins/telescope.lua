@@ -18,4 +18,12 @@ return {
 		end,
 	},
 	{ "nvim-tree/nvim-web-devicons", enabled = vim.g.have_nerd_font },
+	{
+		"ThePrimeagen/harpoon",
+		branch = "harpoon2",
+		dependencies = { "nvim-lua/plenary.nvim" },
+		config = function()
+			require("harpoon").setup()
+		end,
+	},
 }
