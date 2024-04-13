@@ -38,15 +38,14 @@ return {
 	{
 		"barrett-ruth/live-server.nvim",
 		build = "pnpm add -g live-server",
-		cmd = { "LiveServerStart", "LiveServerStop" },
-		config = true,
+		opts = {},
 	},
-	{
-		"github/copilot.vim",
-		config = function()
-			require("copilot").setup({})
-		end,
-	},
+	-- {
+	-- 	"github/copilot.vim",
+	-- 	config = function()
+	-- 		require("copilot").setup({})
+	-- 	end,
+	-- },
 	{
 		"CopilotC-Nvim/CopilotChat.nvim",
 		branch = "canary",

@@ -62,6 +62,11 @@ vim.api.nvim_set_keymap("n", "<leader>b", ":split<CR>:term<CR>", { noremap = tru
 
 vim.api.nvim_set_keymap("n", "<leader>x", ":q<CR>", { noremap = true })
 
+vim.api.nvim_set_keymap("n", "<C-a>", "ggVG", { noremap = true })
+
+vim.api.nvim_set_keymap("n", "<C-s>", ":w<CR>", { noremap = true })
+vim.api.nvim_set_keymap("i", "<C-s>", "<Esc>:w<CR>a", { noremap = true })
+
 function _G.set_terminal_keymaps()
 	local opts = { buffer = 0 }
 	vim.keymap.set("t", "<esc>", [[<C-\><C-n>]], opts)
