@@ -1,5 +1,5 @@
 # saliherdemk/dotfiles
-My Hyprland configuration on Arch Linux (btw) 
+My Hyprland configuration
 
 pkglist.txt contains my additional packages.
 
