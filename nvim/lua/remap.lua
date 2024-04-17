@@ -59,6 +59,7 @@ vim.api.nvim_set_keymap("n", "<C-l>", ":VenvSelect<CR>", { noremap = true })
 
 vim.api.nvim_set_keymap("n", "<leader>n", ":vsplit<CR>:term<CR>", { noremap = true })
 vim.api.nvim_set_keymap("n", "<leader>b", ":split<CR>:term<CR>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<leader>m", ":ToggleTerm<CR>", { noremap = true })
 
 vim.api.nvim_set_keymap("n", "<leader>x", ":q<CR>", { noremap = true })
 
@@ -82,13 +83,6 @@ end)
 vim.keymap.set("n", "<C-t>", function()
 	harpoon:list():select(2)
 end)
-vim.keymap.set("n", "<C-n>", function()
-	harpoon:list():select(3)
-end)
-vim.keymap.set("n", "<C-s>", function()
-	harpoon:list():select(4)
-end)
-
 -- Toggle previous & next buffers stored within Harpoon list
 vim.keymap.set("n", "<C-m>", function()
 	harpoon:list():prev()

@@ -40,6 +40,11 @@ return {
 		build = "pnpm add -g live-server",
 		opts = {},
 	},
+	{
+		"akinsho/toggleterm.nvim",
+		version = "*",
+		opts = {},
+	},
 	-- {
 	-- 	"github/copilot.vim",
 	-- 	config = function()

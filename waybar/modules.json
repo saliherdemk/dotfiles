@@ -5,9 +5,7 @@
     "tooltip-format": "{title}",
     "on-click": "activate",
     "on-click-middle": "close",
-    "ignore-list": [
-      "Alacritty"
-    ]
+    "ignore-list": ["Alacritty"]
   },
   "hyprland/workspaces": {
     "on-click": "activate",
@@ -61,15 +59,14 @@
   "pulseaudio": {
     "scroll-step": 3,
     "format": "{volume}% {format_source}",
-    "ignored-sinks": [
-      "Easy Effects Sink"
-    ],
+    "ignored-sinks": ["Easy Effects Sink"],
     "max-volume": 150,
     "format-muted": "0% <span color='#7d9bba'>{format_source}</span>",
     "format-source": "",
     "format-source-muted": "",
     "on-click": "pavucontrol",
-    "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+    "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+    "on-click-middle": "qpwgraph"
   },
   "hyprland/language": {
     "format": "{}",
@@ -80,12 +77,7 @@
   "backlight": {
     "device": "amdgpu_bl1",
     "format": "{percent}% {icon}",
-    "format-icons": [
-      "󰃞",
-      "󰃝",
-      "󰃟",
-      "󰃠"
-    ]
+    "format-icons": ["󰃞", "󰃝", "󰃟", "󰃠"]
   },
   "battery": {
     "interval": 5,
@@ -95,26 +87,11 @@
     },
     "format": "{icon} {capacity}%",
     "format-alt": "{icon} {time}",
-    "format-icons": [
-      "󰂎",
-      "󰁺",
-      "󰁻",
-      "󰁼",
-      "󰁽",
-      "󰁾",
-      "󰁿",
-      "󰂀",
-      "󰂁",
-      "󰂂"
-    ]
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂"]
   },
   "group/brighttery": {
     "orientation": "horizontal",
-    "modules": [
-      "hyprland/language",
-      "battery",
-      "backlight"
-    ]
+    "modules": ["hyprland/language", "battery", "backlight"]
   },
   "tray": {
     "icon-size": 15,
