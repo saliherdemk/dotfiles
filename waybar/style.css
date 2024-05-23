@@ -23,10 +23,12 @@ button {
 #workspaces,
 #clock,
 #cpu,
+#gpu,
 #memory,
 #network,
 #pulseaudio,
 #brighttery,
+#custom-gpu-usage,
 #tray {
   padding: 3px 15px;
   color: #e5e5e5;
@@ -88,6 +90,10 @@ button {
 #cpu {
   color: #fb958b;
   background-color: #1e1e1e;
+}
+
+#custom-gpu-usage {
+  color: #ADD8E6
 }
 
 #network {

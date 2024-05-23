@@ -37,6 +37,12 @@
     "format": "☰ {used:0.2f} / {total:0.0f} GB",
     "on-click": "alacritty -e btop"
   },
+  "custom/gpu-usage": {
+    "exec": "cat /sys/class/hwmon/hwmon1/device/gpu_busy_percent",
+    "format": "󰾲 {}%",
+    "return-type": "",
+    "interval": 3
+  },
   "cpu": {
     "interval": 1,
     "format": " {max_frequency}GHz <span color=\"darkgray\">| {usage}%</span>",

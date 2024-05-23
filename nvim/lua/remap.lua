@@ -68,6 +68,8 @@ vim.api.nvim_set_keymap("n", "<C-a>", "ggVG", { noremap = true })
 vim.api.nvim_set_keymap("n", "<C-s>", ":w<CR>", { noremap = true })
 vim.api.nvim_set_keymap("i", "<C-s>", "<Esc>:w<CR>a", { noremap = true })
 
+vim.api.nvim_set_keymap("i", "jj", "<Esc>", { noremap = true })
+
 local harpoon = require("harpoon")
 
 vim.keymap.set("n", "<leader>a", function()

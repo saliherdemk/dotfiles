@@ -22,6 +22,7 @@
     ],
     "modules-right": [
         "memory",
+        "custom/gpu-usage",
         "cpu",
         "network",
         "pulseaudio",
