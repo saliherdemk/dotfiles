@@ -3,7 +3,7 @@ shell = "/usr/bin/zsh"
 [window]
 padding = {x =  5, y = 5}
 opacity = 0.8
-decorations = "None"
+# decorations = "None"
 
 [window.class]
 general = "Alacritty"
