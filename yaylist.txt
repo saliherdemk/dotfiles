@@ -6,6 +6,7 @@ cura-bin
 google-chrome
 hyprlock-git
 hyprpicker
+ngrok
 nodejs-live-server
 osu
 pyenv-virtualenv

@@ -4,7 +4,6 @@ amdvlk
 baobab
 base
 base-devel
-blender
 blueman
 bluez-utils
 breeze
@@ -32,6 +31,7 @@ hypridle
 hyprland
 hyprpaper
 intel-media-driver
+intellij-idea-community-edition
 iwd
 kwallet-pam
 lib32-vulkan-radeon
@@ -56,6 +56,7 @@ pavucontrol
 pipewire-pulse
 plasma-meta
 polkit-kde-agent
+python-pandas
 python-pip
 qpwgraph
 qt5-wayland
