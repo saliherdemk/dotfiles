@@ -146,3 +146,7 @@ button {
   -gtk-icon-effect: highlight;
   background-color: #eb4d4b;
 }
+
+#custom-keyboard_mode {
+  font-size: 14px;
+}

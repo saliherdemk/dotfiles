@@ -80,6 +80,12 @@
     "format-tr": "󰌌 Tr",
     "on-click": "hyprctl switchxkblayout power-button next"
   },
+  "custom/keyboard_mode": {
+    "format": "{}",
+    "exec": "cat /tmp/hypr-submap",
+    "on-click": "bash ~/.config/hypr/scripts/change_mode.sh",
+    "interval": 1
+  },
   "backlight": {
     "device": "amdgpu_bl1",
     "format": "{percent}% {icon}",
@@ -97,7 +103,12 @@
   },
   "group/brighttery": {
     "orientation": "horizontal",
-    "modules": ["hyprland/language", "battery", "backlight"]
+    "modules": [
+      "hyprland/language",
+      "custom/keyboard_mode",
+      "battery",
+      "backlight"
+    ]
   },
   "tray": {
     "icon-size": 15,
