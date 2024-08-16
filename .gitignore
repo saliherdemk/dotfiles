@@ -11,11 +11,9 @@ QtProject.conf
 user-dirs.dirs
 user-dirs.locale
 neofetch
-nvim-gtk
 cef_user_data
 ibus
 vlc
-gtk-4.0
 KDE
 kde*
 libaccounts-glib
@@ -65,3 +63,6 @@ kscreenlockerrc
 kxkbrc
 powerdevilrc
 ngrok
+composer
+godot
+sqlitebrowser

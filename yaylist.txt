@@ -1,13 +1,13 @@
 appimagelauncher-bin
 bt-dualboot
 cpupower-gui-git
-cropgui
 cura-bin
 google-chrome
+haguichi
 hyprlock-git
 hyprpicker
+mirage
 ngrok
-nodejs-live-server
 osu
 pyenv-virtualenv
 rofi-lbonn-wayland-git
