@@ -18,7 +18,6 @@ docker
 docker-compose
 dosfstools
 dunst
-edk2-ovmf
 efibootmgr
 fd
 file-roller
@@ -28,7 +27,6 @@ git
 gnome-calculator
 gnome-system-monitor
 godot
-gparted
 grim
 grub
 grub-customizer
@@ -51,7 +49,6 @@ libva-mesa-driver
 linux
 linux-firmware
 lxappearance
-mariadb
 mlocate
 nano
 neofetch
@@ -72,7 +69,6 @@ polkit-kde-agent
 pulseaudio-alsa
 python-pandas
 python-pip
-python-pyserial
 qpwgraph
 qt5-wayland
 qt5ct
@@ -85,7 +81,6 @@ slurp
 smartmontools
 sqlitebrowser
 steam
-swtpm
 thunar
 thunar-archive-plugin
 thunar-volman

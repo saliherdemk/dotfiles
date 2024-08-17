@@ -77,6 +77,10 @@ return {
 			lspconfig["rust_analyzer"].setup({
 				capabilities = capabilities,
 			})
+
+			lspconfig["intelephense"].setup({
+				capabilities = capabilities,
+			})
 		end,
 	},
 }

@@ -14,6 +14,7 @@ return {
 				javascript = { "prettierd" },
 				json = { "prettierd" },
 				html = { "prettierd" },
+				php = { "php-cs-fixer" },
 			},
 		},
 	},

@@ -76,13 +76,36 @@ return {
 	{ "stevearc/dressing.nvim" },
 	{
 		"linux-cultist/venv-selector.nvim",
-		dependencies = { "neovim/nvim-lspconfig", "nvim-telescope/telescope.nvim", "mfussenegger/nvim-dap-python" },
-		opts = {
-			name = { "venv", ".venv", "venv1", ".venv1" },
-			auto_refresh = true,
-			enable_debug_output = true,
-			parents = 0,
+		dependencies = {
+			"neovim/nvim-lspconfig",
+			"mfussenegger/nvim-dap",
+			{ "nvim-telescope/telescope.nvim", branch = "0.1.x", dependencies = { "nvim-lua/plenary.nvim" } },
 		},
-		event = "VeryLazy", -- Optional: needed only if you want to type `:VenvSelect` without a keymapping
+		lazy = false,
+		branch = "regexp",
+		config = function()
+			require("venv-selector").setup()
+		end,
+	},
+	{
+		"akinsho/bufferline.nvim",
+		version = "*",
+		dependencies = "nvim-tree/nvim-web-devicons",
+		config = function()
+			require("bufferline").setup({
+				options = {
+					mode = "tabs",
+					offsets = {
+						{
+							filetype = "NvimTree",
+							text = "File Explorer",
+							text_align = "center",
+							highlight = "Directory",
+							separator = true,
+						},
+					},
+				},
+			})
+		end,
 	},
 }

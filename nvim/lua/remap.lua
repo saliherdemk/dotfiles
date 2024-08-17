@@ -65,9 +65,12 @@ vim.api.nvim_set_keymap("n", "<M-q>", "<C-w>q", { noremap = true })
 
 vim.api.nvim_set_keymap("n", "<C-l>", ":VenvSelect<CR>", { noremap = true })
 
-vim.api.nvim_set_keymap("n", "<leader>n", ":vsplit<CR>:term<CR>", { noremap = true })
-vim.api.nvim_set_keymap("n", "<leader>b", ":split<CR>:term<CR>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<leader>b", ":tabnew<CR>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<leader>n", ":tab term<CR>", { noremap = true })
+
 vim.api.nvim_set_keymap("n", "<leader>m", ":ToggleTerm<CR>", { noremap = true })
+
+vim.api.nvim_set_keymap("n", "<A-Tab>", ":tabNext<CR>", { noremap = true })
 
 vim.api.nvim_set_keymap("n", "<leader>x", ":q<CR>", { noremap = true })
 

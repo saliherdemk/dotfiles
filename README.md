@@ -15,6 +15,10 @@ pacman -Qqem > yaylist.txt
 dconf dump / > dconf.settings.ini
 ```
 
+```
+sudo pacman -Qdtq | sudo pacman -Rns -
+```
+
 # Installation
 Move pacman.conf to `/etc/pacman.conf`
 
