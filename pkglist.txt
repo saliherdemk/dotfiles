@@ -36,6 +36,7 @@ gvfs-mtp
 hugo
 hypridle
 hyprland
+hyprlock
 hyprpaper
 intel-media-driver
 intellij-idea-community-edition
@@ -72,6 +73,7 @@ qpwgraph
 qt6-wayland
 qt6ct
 ripgrep
+rofi-wayland
 sddm
 slurp
 sqlitebrowser

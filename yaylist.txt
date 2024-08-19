@@ -4,15 +4,14 @@ cpupower-gui-git
 cura-bin
 google-chrome
 haguichi
-hyprlock-git
 hyprpicker
 mirage
 osu
 pyenv-virtualenv
-rofi-lbonn-wayland-git
 satty-bin
 simplicity-sddm-theme-git
 vscodium
 yay
+yay-debug
 youtube-music-bin
 zsh-theme-powerlevel10k-git
