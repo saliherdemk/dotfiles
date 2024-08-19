@@ -6,7 +6,7 @@ configuration {
   modi: "window,run,drun";
 
   show-icons: true;
-  icon-theme: "Papirus";
+  icon-theme: "Breeze";
 }
 
 @theme "onedark.rasi"

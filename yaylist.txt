@@ -7,7 +7,6 @@ haguichi
 hyprlock-git
 hyprpicker
 mirage
-ngrok
 osu
 pyenv-virtualenv
 rofi-lbonn-wayland-git

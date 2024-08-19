@@ -3,22 +3,6 @@ My Hyprland configuration
 
 pkglist.txt contains my additional packages.
 
-```
-pacman -Qqen > pkglist.txt
-```
-
-```
-pacman -Qqem > yaylist.txt
-```
-
-```
-dconf dump / > dconf.settings.ini
-```
-
-```
-sudo pacman -Qdtq | sudo pacman -Rns -
-```
-
 # Installation
 Move pacman.conf to `/etc/pacman.conf`
 
@@ -42,12 +26,6 @@ then
 
 ```
 yay -S - < yaylist.txt
-```
-
-# dconf
-
-```
-dconf load / < dconf.settings.ini
 ```
 
 # sddm
@@ -84,3 +62,19 @@ chsh
 [gnome-disk-utility](https://archlinux.org/packages/extra/x86_64/gnome-disk-utility/) for manipulating `fstab`
 
 [gparted](https://archlinux.org/packages/extra/x86_64/gparted/) for partitioning
+
+```
+pacman -Qqen > pkglist.txt
+```
+
+```
+pacman -Qqem > yaylist.txt
+```
+
+```
+dconf dump / > dconf.settings.ini
+```
+
+```
+sudo pacman -Qdtq | sudo pacman -Rns -
+```
