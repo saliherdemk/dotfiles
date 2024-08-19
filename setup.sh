@@ -44,7 +44,7 @@ echo "Adding simplicity theme to SDDM themes directory"
 sudo cp -r sddm/simplicity /usr/share/sddm/themes/
 
 echo "Changing SDDM theme to simplicity"
-sudo sed -i 's/^Theme=.*$/Theme=simplicity/' /usr/lib/sddm/sddm.conf.d/default.conf
+sudo sed -i 's/^Current=.*$/Current=simplicity/' /usr/lib/sddm/sddm.conf.d/default.conf
 
 # Cura configuration
 echo "Updating Cura desktop entry"
@@ -63,6 +63,12 @@ cp zsh/.zshrc ~/.zshrc
 # Change default shell to zsh
 echo "Changing default shell to zsh"
 sudo chsh -s /usr/bin/zsh $(whoami)
+
+# For some gnome apps which prefer light mode
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+
+# Remove oprhaned packages
+sudo pacman -Rns --noconfirm $(sudo pacman -Qdtq)
 
 echo "Script execution completed successfully!"
 

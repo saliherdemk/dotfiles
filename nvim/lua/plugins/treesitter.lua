@@ -7,20 +7,7 @@ return {
 
 			---@diagnostic disable-next-line: missing-fields
 			require("nvim-treesitter.configs").setup({
-				ensure_installed = {
-					"bash",
-					"c",
-					"html",
-					"css",
-					"javascript",
-					"typescript",
-					"lua",
-					"markdown",
-					"yaml",
-					"vimdoc",
-					"vim",
-					"latex",
-				},
+				ensure_installed = 'all',
 				-- Autoinstall languages that are not installed
 				auto_install = true,
 				highlight = { enable = true },
