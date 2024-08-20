@@ -25,6 +25,7 @@ firefox
 gifsicle
 git
 gnome-calculator
+gnome-disk-utility
 gnome-system-monitor
 gnome-themes-extra
 godot
