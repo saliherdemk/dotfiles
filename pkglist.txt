@@ -59,6 +59,7 @@ neovim
 network-manager-applet
 networkmanager
 nodejs
+noto-fonts
 npm
 ntfs-3g
 nwg-look
@@ -89,7 +90,9 @@ thunar
 thunar-archive-plugin
 thunar-volman
 ttf-0xproto-nerd
+ttf-dejavu
 ttf-jetbrains-mono-nerd
+ttf-roboto
 unzip
 vim
 vlc
