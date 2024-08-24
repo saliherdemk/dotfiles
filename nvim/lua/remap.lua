@@ -70,7 +70,7 @@ vim.api.nvim_set_keymap("n", "<leader>n", ":tab term<CR>", { noremap = true })
 
 vim.api.nvim_set_keymap("n", "<leader>m", ":ToggleTerm<CR>", { noremap = true })
 
-vim.api.nvim_set_keymap("n", "<A-Tab>", ":tabNext<CR>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<A-Tab>", ":tabnext<CR>", { noremap = true })
 
 vim.api.nvim_set_keymap("n", "<leader>x", ":q<CR>", { noremap = true })
 
