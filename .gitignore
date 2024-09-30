@@ -19,3 +19,9 @@ QtProject.conf
 VSCodium
 composer
 google-chrome
+blender
+cpupower_gui
+glib-2.0
+obs-studio
+systemd
+cef_user_data

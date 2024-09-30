@@ -37,7 +37,7 @@ return {
 				capabilities = capabilities,
 			})
 
-			lspconfig["tsserver"].setup({
+			lspconfig["ts_ls"].setup({
 				capabilities = capabilities,
 			})
 
@@ -48,6 +48,8 @@ return {
 			lspconfig["tailwindcss"].setup({
 				capabilities = capabilities,
 			})
+
+			-- Uncomment if you want Emmet support
 			-- lspconfig["emmet_ls"].setup({
 			-- 	capabilities = capabilities,
 			-- 	filetypes = {
@@ -62,8 +64,21 @@ return {
 			-- 	},
 			-- })
 
+			-- Pyright setup with external formatting via black
 			lspconfig["pyright"].setup({
 				capabilities = capabilities,
+				on_attach = function(client, bufnr)
+					-- Enable formatting
+					client.server_capabilities.documentFormattingProvider = true
+					-- Keymap for formatting
+					vim.api.nvim_buf_set_keymap(
+						bufnr,
+						"n",
+						"<leader>f",
+						"<cmd>lua vim.lsp.buf.format()<CR>",
+						{ noremap = true, silent = true }
+					)
+				end,
 			})
 
 			lspconfig["lua_ls"].setup({
@@ -80,6 +95,20 @@ return {
 
 			lspconfig["intelephense"].setup({
 				capabilities = capabilities,
+			})
+		end,
+	},
+
+	{
+		"jose-elias-alvarez/null-ls.nvim",
+		config = function()
+			local null_ls = require("null-ls")
+			null_ls.setup({
+				sources = {
+					null_ls.builtins.formatting.black.with({
+						extra_args = { "--fast" },
+					}),
+				},
 			})
 		end,
 	},

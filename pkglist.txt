@@ -11,6 +11,7 @@ breeze
 breeze-gtk
 brightnessctl
 btop
+clang
 composer
 cpupower
 dnsmasq
@@ -24,8 +25,10 @@ file-roller
 firefox
 gifsicle
 git
+git-lfs
 gnome-calculator
 gnome-disk-utility
+gnome-keyring
 gnome-system-monitor
 gnome-themes-extra
 godot
@@ -52,7 +55,6 @@ libva-intel-driver
 libva-mesa-driver
 linux
 linux-firmware
-mlocate
 nano
 neofetch
 neovim
@@ -72,6 +74,7 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+plocate
 polkit-kde-agent
 pulseaudio-alsa
 python-pip
@@ -89,6 +92,7 @@ steam
 thunar
 thunar-archive-plugin
 thunar-volman
+tokei
 ttf-0xproto-nerd
 ttf-dejavu
 ttf-jetbrains-mono-nerd

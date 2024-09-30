@@ -2,9 +2,11 @@ appimagelauncher-bin
 bt-dualboot
 cpupower-gui-git
 cura-bin
+downgrade
 google-chrome
 haguichi
 hyprpicker
+minecraft-launcher
 mirage
 osu
 pyenv-virtualenv
