@@ -5,11 +5,9 @@ cura-bin
 downgrade
 google-chrome
 haguichi
-hyprpicker
 minecraft-launcher
 mirage
-osu
-pyenv-virtualenv
+osu-lazer
 satty-bin
 simplicity-sddm-theme-git
 vscodium

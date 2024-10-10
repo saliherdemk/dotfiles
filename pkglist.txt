@@ -23,6 +23,7 @@ efibootmgr
 fd
 file-roller
 firefox
+gdb
 gifsicle
 git
 git-lfs
@@ -43,6 +44,7 @@ hypridle
 hyprland
 hyprlock
 hyprpaper
+hyprpicker
 intel-media-driver
 intellij-idea-community-edition
 iptables-nft
@@ -92,6 +94,7 @@ steam
 thunar
 thunar-archive-plugin
 thunar-volman
+tk
 tokei
 ttf-0xproto-nerd
 ttf-dejavu
