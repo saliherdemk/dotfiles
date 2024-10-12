@@ -52,15 +52,14 @@
   },
   "network": {
     "format-wifi": "  {signalStrength}%",
-    "format-ethernet": "⬇{bandwidthDownBytes} ⬆{bandwidthUpBytes}",
+    "format-ethernet": "󱘖",
     "interval": 1,
     "format-linked": "{ifname} (No IP) ",
     "format": "",
     "format-alt": "{ifname}: {ipaddr}/{cidr}",
     "tooltip-format": " {bandwidthUpBits}  {bandwidthDownBits}\n{ifname}\n{ipaddr}/{cidr}\n",
     "tooltip-format-wifi": "  {essid} {frequency}MHz\nStrength: {signaldBm}dBm ({signalStrength}%)\nIP: {ipaddr}/{cidr}\n {bandwidthUpBits}  {bandwidthDownBits}",
-    "max-length": 14,
-    "min-length": 7
+    "max-length": 1
   },
   "pulseaudio": {
     "scroll-step": 3,
@@ -76,8 +75,8 @@
   },
   "hyprland/language": {
     "format": "{}",
-    "format-en": "󰌌 En",
-    "format-tr": "󰌌 Tr",
+    "format-en": "En",
+    "format-tr": "Tr",
     "on-click": "hyprctl switchxkblayout power-button next"
   },
   "custom/keyboard_mode": {
@@ -90,6 +89,14 @@
     "device": "amdgpu_bl1",
     "format": "{percent}% {icon}",
     "format-icons": ["󰃞", "󰃝", "󰃟", "󰃠"]
+  },
+  "custom/brightness": {
+    "format": "{}",
+    "return-type": "json",
+    "exec": "bash ~/.config/hypr/scripts/brightness.sh get",
+    "interval": 1,
+    "on-click": "bash ~/.config/hypr/scripts/brightness.sh -",
+    "on-click-right": "bash ~/.config/hypr/scripts/brightness.sh +"
   },
   "battery": {
     "interval": 5,
@@ -107,7 +114,8 @@
       "hyprland/language",
       "custom/keyboard_mode",
       "battery",
-      "backlight"
+      "backlight",
+      "custom/brightness"
     ]
   },
   "tray": {

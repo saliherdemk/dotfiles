@@ -14,6 +14,7 @@ btop
 clang
 composer
 cpupower
+ddcutil
 dnsmasq
 docker
 docker-compose
@@ -49,6 +50,7 @@ intel-media-driver
 intellij-idea-community-edition
 iptables-nft
 iwd
+jq
 kwallet-pam
 lib32-vulkan-radeon
 libpulse

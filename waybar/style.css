@@ -20,6 +20,7 @@ button {
   border-radius: 0px;
 }
 
+
 #workspaces,
 #clock,
 #cpu,
@@ -34,6 +35,11 @@ button {
   color: #e5e5e5;
   border-radius: 20px;
   background-color: #1e1e1e;
+}
+
+#custom-brightness {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 
@@ -145,8 +151,4 @@ button {
 #tray>.needs-attention {
   -gtk-icon-effect: highlight;
   background-color: #eb4d4b;
-}
-
-#custom-keyboard_mode {
-  font-size: 14px;
 }
