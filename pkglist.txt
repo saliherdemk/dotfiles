@@ -96,6 +96,7 @@ steam
 thunar
 thunar-archive-plugin
 thunar-volman
+timidity++
 tk
 tokei
 ttf-0xproto-nerd

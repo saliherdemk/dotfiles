@@ -38,7 +38,7 @@
     "on-click": "alacritty -e btop"
   },
   "custom/gpu-usage": {
-    "exec": "cat /sys/class/hwmon/hwmon1/device/gpu_busy_percent",
+    "exec": "bash ~/.config/hypr/scripts/get_gpu_busy_percent.sh",
     "format": "󰾲 {}%",
     "return-type": "",
     "interval": 3
@@ -59,7 +59,7 @@
     "format-alt": "{ifname}: {ipaddr}/{cidr}",
     "tooltip-format": " {bandwidthUpBits}  {bandwidthDownBits}\n{ifname}\n{ipaddr}/{cidr}\n",
     "tooltip-format-wifi": "  {essid} {frequency}MHz\nStrength: {signaldBm}dBm ({signalStrength}%)\nIP: {ipaddr}/{cidr}\n {bandwidthUpBits}  {bandwidthDownBits}",
-    "max-length": 1
+    "max-length": 7
   },
   "pulseaudio": {
     "scroll-step": 3,
@@ -87,7 +87,8 @@
   },
   "backlight": {
     "device": "amdgpu_bl1",
-    "format": "{percent}% {icon}",
+    "format": "{icon}",
+    "tooltip-format": "{percent}% {icon}",
     "format-icons": ["󰃞", "󰃝", "󰃟", "󰃠"]
   },
   "custom/brightness": {
@@ -97,6 +98,10 @@
     "interval": 1,
     "on-click": "bash ~/.config/hypr/scripts/brightness.sh -",
     "on-click-right": "bash ~/.config/hypr/scripts/brightness.sh +"
+  },
+  "custom/battery": {
+    "exec": "bash ~/.config/hypr/scripts/notify_on_low_battery.sh",
+    "interval": 60
   },
   "battery": {
     "interval": 5,
@@ -114,6 +119,7 @@
       "hyprland/language",
       "custom/keyboard_mode",
       "battery",
+      "custom/battery",
       "backlight",
       "custom/brightness"
     ]
