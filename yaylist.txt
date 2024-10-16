@@ -7,10 +7,10 @@ google-chrome
 haguichi
 minecraft-launcher
 mirage
-osu-lazer
 satty-bin
 simplicity-sddm-theme-git
 vscodium
+xppenlinux-v3
 yay
 yay-debug
 youtube-music-bin
