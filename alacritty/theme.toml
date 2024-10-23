@@ -1,4 +1,3 @@
-shell = "/usr/bin/zsh"
 
 [window]
 padding = {x =  5, y = 5}
@@ -65,5 +64,8 @@ style = "Medium"
 [scrolling]
 history = 10000
 multiplier = 3
+
+[terminal]
+shell = "/usr/bin/zsh"
 
 
