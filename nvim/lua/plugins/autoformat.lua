@@ -1,5 +1,4 @@
 return {
-
 	{ -- Autoformat
 		"stevearc/conform.nvim",
 		opts = {
@@ -15,6 +14,7 @@ return {
 				json = { "prettierd" },
 				html = { "prettierd" },
 				php = { "php-cs-fixer" },
+				css = { "prettierd" },
 			},
 		},
 	},

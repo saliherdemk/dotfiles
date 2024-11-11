@@ -40,7 +40,6 @@
   "custom/gpu-usage": {
     "exec": "bash ~/.config/hypr/scripts/get_gpu_busy_percent.sh",
     "format": "󰾲 {}%",
-    "return-type": "",
     "interval": 3
   },
   "cpu": {
