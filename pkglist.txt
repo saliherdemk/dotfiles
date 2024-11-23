@@ -47,7 +47,6 @@ hyprlock
 hyprpaper
 hyprpicker
 intel-media-driver
-intellij-idea-community-edition
 iptables-nft
 iwd
 jq
