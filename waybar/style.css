@@ -9,7 +9,7 @@
 }
 
 button {
-  all: unset
+  all: unset;
 }
 
 #waybar {
@@ -19,7 +19,6 @@ button {
   transition-duration: 0.2s;
   border-radius: 0px;
 }
-
 
 #workspaces,
 #clock,
@@ -41,7 +40,6 @@ button {
   padding-left: 5px;
   padding-right: 5px;
 }
-
 
 #taskbar button:first-child {
   border-top-left-radius: 20px;
@@ -77,7 +75,7 @@ button {
 #workspaces button:hover {
   background: none;
   text-shadow: none;
-  color: #c7c7c7
+  color: #c7c7c7;
 }
 
 #workspaces button.active {
@@ -86,6 +84,11 @@ button {
 
 #clock {
   color: #c8d2e0;
+}
+
+#custom-update {
+  color: #c1baa1;
+  font-size: 18px;
 }
 
 #memory {
@@ -99,7 +102,7 @@ button {
 }
 
 #custom-gpu-usage {
-  color: #ADD8E6
+  color: #add8e6;
 }
 
 #network {
@@ -143,12 +146,11 @@ button {
   animation-direction: alternate;
 }
 
-
-#tray>.passive {
+#tray > .passive {
   -gtk-icon-effect: dim;
 }
 
-#tray>.needs-attention {
+#tray > .needs-attention {
   -gtk-icon-effect: highlight;
   background-color: #eb4d4b;
 }

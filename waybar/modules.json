@@ -32,6 +32,13 @@
       }
     }
   },
+  "custom/update": {
+    "exec": "bash ~/.config/hypr/scripts/check_updates.sh",
+    "interval": 600,
+    "format": "{}",
+    "return-type": "json",
+    "on-click": "pkexec bash -c '/usr/bin/pacman -Syu --noconfirm' && killall waybar && waybar"
+  },
   "memory": {
     "interval": 10,
     "format": "☰ {used:0.2f} / {total:0.0f} GB",

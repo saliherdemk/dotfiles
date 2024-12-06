@@ -21,6 +21,7 @@
         //"clock#date",
     ],
     "modules-right": [
+        "custom/update",
         "memory",
         "custom/gpu-usage",
         "cpu",
