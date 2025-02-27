@@ -2,6 +2,7 @@ alacritty
 alsa-utils
 amd-ucode
 amdvlk
+arduino-ide
 baobab
 base
 base-devel
@@ -34,6 +35,7 @@ gnome-keyring
 gnome-system-monitor
 gnome-themes-extra
 godot
+graphviz
 grim
 grub
 grub-customizer
@@ -49,8 +51,10 @@ hyprpicker
 intel-media-driver
 iptables-nft
 iwd
+jdk-openjdk
 jq
 kwallet-pam
+less
 lib32-vulkan-radeon
 libpulse
 libreoffice-fresh
@@ -102,6 +106,7 @@ ttf-dejavu
 ttf-jetbrains-mono-nerd
 ttf-roboto
 unzip
+vi
 vim
 vlc
 vulkan-intel
@@ -123,6 +128,5 @@ xf86-video-vmware
 xorg-server
 xorg-xhost
 xorg-xinit
-xwaylandvideobridge
 zip
 zram-generator
