@@ -22,6 +22,7 @@ docker-compose
 dosfstools
 dunst
 efibootmgr
+efitools
 fd
 file-roller
 firefox
@@ -42,6 +43,7 @@ grub-customizer
 gst-plugin-pipewire
 gvfs
 gvfs-mtp
+gvfs-smb
 hugo
 hypridle
 hyprland
@@ -91,6 +93,7 @@ qt6-wayland
 qt6ct
 ripgrep
 rofi-wayland
+samba
 sddm
 slurp
 sqlitebrowser
