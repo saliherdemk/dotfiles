@@ -23,6 +23,7 @@ dosfstools
 dunst
 efibootmgr
 efitools
+fastfetch
 fd
 file-roller
 firefox
@@ -36,10 +37,10 @@ gnome-keyring
 gnome-system-monitor
 gnome-themes-extra
 godot
+gparted
 graphviz
 grim
 grub
-grub-customizer
 gst-plugin-pipewire
 gvfs
 gvfs-mtp
@@ -64,7 +65,6 @@ libva-intel-driver
 linux
 linux-firmware
 nano
-neofetch
 neovim
 network-manager-applet
 networkmanager

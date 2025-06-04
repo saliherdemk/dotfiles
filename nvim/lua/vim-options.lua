@@ -47,6 +47,18 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
+vim.keymap.set("v", "<", "<gv", { noremap = true })
+vim.keymap.set("v", ">", ">gv", { noremap = true })
+
+vim.keymap.set("n", "d", '"_d', { noremap = true })
+vim.keymap.set("v", "d", '"_d', { noremap = true })
+vim.keymap.set("n", "x", '"_x', { noremap = true })
+vim.keymap.set("n", "c", '"_c', { noremap = true })
+vim.keymap.set("v", "c", '"_c', { noremap = true })
+
+vim.keymap.set("n", "dd", "dd", { noremap = true })
+
+
 vim.api.nvim_create_autocmd("TextYankPost", {
 	callback = function()
 		vim.highlight.on_yank()
