@@ -7,6 +7,7 @@ google-chrome
 haguichi
 minecraft-launcher
 mirage
+noisetorch-bin
 satty-bin
 simplicity-sddm-theme-git
 vscodium

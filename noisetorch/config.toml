@@ -1,0 +1,7 @@
+Threshold = 13
+DisplayMonitorSources = false
+EnableUpdates = true
+FilterInput = true
+FilterOutput = false
+LastUsedInput = "alsa_input.usb-Kingston_HyperX_SoloCast-00.analog-stereo"
+LastUsedOutput = ""

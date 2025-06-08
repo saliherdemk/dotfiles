@@ -43,6 +43,12 @@ adjust_brightness() {
         exit 1
     fi
 
+    if [ "$new_brightness" -lt 0 ]; then
+        new_brightness=0
+    elif [ "$new_brightness" -gt 100 ]; then
+        new_brightness=100
+    fi
+
     ddcutil --bus "$I2C_BUS" --sleep-multiplier 0.2 setvcp 10 "$new_brightness"
 }
 
