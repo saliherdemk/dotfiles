@@ -114,6 +114,7 @@ unzip
 vi
 vim
 vlc
+vlc-plugin-ffmpeg
 vulkan-intel
 vulkan-radeon
 vulkan-tools
@@ -130,7 +131,6 @@ xdg-utils
 xf86-video-amdgpu
 xf86-video-ati
 xf86-video-nouveau
-xf86-video-vmware
 xorg-server
 xorg-xhost
 xorg-xinit
