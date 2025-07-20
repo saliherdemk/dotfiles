@@ -50,6 +50,8 @@ vim.opt.colorcolumn = "80"
 vim.keymap.set("v", "<", "<gv", { noremap = true })
 vim.keymap.set("v", ">", ">gv", { noremap = true })
 
+vim.keymap.set("n", "c", [["_c]], { noremap = true })
+
 vim.api.nvim_create_autocmd("TextYankPost", {
 	callback = function()
 		vim.highlight.on_yank()
