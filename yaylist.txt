@@ -1,7 +1,7 @@
 appimagelauncher-bin
+bambustudio-bin
 bt-dualboot
 cpupower-gui-git
-cura-bin
 downgrade
 google-chrome
 haguichi
@@ -11,7 +11,8 @@ noisetorch-bin
 pyenv-virtualenv
 satty-bin
 simplicity-sddm-theme-git
-vscodium
+ventoy-bin
+vscodium-bin
 xppenlinux-v3
 yay
 yay-debug
