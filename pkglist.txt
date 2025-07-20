@@ -87,6 +87,7 @@ pipewire-pulse
 plocate
 polkit-kde-agent
 pulseaudio-alsa
+pyenv
 python-pip
 qpwgraph
 qsynth

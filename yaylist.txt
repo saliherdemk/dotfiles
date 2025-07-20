@@ -8,6 +8,7 @@ haguichi
 minecraft-launcher
 mirage
 noisetorch-bin
+pyenv-virtualenv
 satty-bin
 simplicity-sddm-theme-git
 vscodium
