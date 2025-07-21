@@ -1,4 +1,4 @@
-appimagelauncher-bin
+appimagelauncher
 bambustudio-bin
 bt-dualboot
 cpupower-gui-git
@@ -9,7 +9,6 @@ minecraft-launcher
 mirage
 noisetorch-bin
 pyenv-virtualenv
-satty-bin
 simplicity-sddm-theme-git
 ventoy-bin
 vscodium-bin

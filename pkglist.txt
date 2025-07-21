@@ -91,12 +91,14 @@ pyenv
 python-pip
 qpwgraph
 qsynth
+qt5-wayland
 qt5ct
 qt6-wayland
 qt6ct
 ripgrep
 rofi-wayland
 samba
+satty
 sddm
 slurp
 sqlitebrowser
@@ -125,7 +127,6 @@ wine
 wireless_tools
 wireplumber
 wl-clipboard
-xdg-desktop-portal
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-utils
