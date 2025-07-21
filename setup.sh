@@ -65,19 +65,26 @@ cp zsh/.zshrc ~/.zshrc
 echo "Changing default shell to zsh"
 sudo chsh -s /usr/bin/zsh $(whoami)
 
+# MINEGRUUUB
+git clone https://github.com/Lxtharia/minegrub-theme.git
+cd ./minegrub-theme
+sudo cp -ruv ./minegrub /boot/grub/themes/
+sudo sed -i '/^#*GRUB_THEME=/c\GRUB_THEME="/boot/grub/themes/minegrub/theme.txt"' /etc/default/grub
+sudo sed -i '/^#*GRUB_DISABLE_OS_PROBER=/c\GRUB_DISABLE_OS_PROBER=false' /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+cd ..
+rm -rf minegrub-theme
+echo "Minegrub theme installed!"
+
 # For some gnome apps which prefer light mode
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
-# Remove oprhaned packages
-sudo pacman -Rns --noconfirm $(sudo pacman -Qdtq)
+orphans=$(sudo pacman -Qdtq)
 
-echo "==> Clearing existing ~/.config contents"
-rm -rf ~/.config/*
+if [ -n "$orphans" ]; then
+  sudo pacman -Rns --noconfirm $orphans
+else 
+  echo "No orphaned packages."
+fi
 
-echo "==> Moving contents of $(pwd) into ~/.config"
-mv -v ./* ~/.config/
-
-echo "~/.config is now replaced with contents of $(pwd)"
-
-echo "Script execution completed successfully!"
-
+echo "Script execution completed successfully! You may reboot now."
