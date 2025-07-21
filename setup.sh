@@ -46,9 +46,10 @@ sudo cp -r sddm/simplicity /usr/share/sddm/themes/
 echo "Changing SDDM theme to simplicity"
 sudo sed -i 's/^Current=.*$/Current=simplicity/' /usr/lib/sddm/sddm.conf.d/default.conf
 
-# Cura configuration
-echo "Updating Cura desktop entry"
-sudo sed -i 's|^Exec=.*|Exec=UltiMaker-Cura -platformtheme gtk3|' /usr/share/applications/com.ultimaker.cura.desktop
+echo "Enabling services"
+
+sudo systemctl enable sddm
+sudo systemctl enable NetworkManager
 
 # Zsh configuration
 echo "Copying .p10k.zsh to home directory"
@@ -69,6 +70,14 @@ gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
 # Remove oprhaned packages
 sudo pacman -Rns --noconfirm $(sudo pacman -Qdtq)
+
+echo "==> Clearing existing ~/.config contents"
+rm -rf ~/.config/*
+
+echo "==> Moving contents of $(pwd) into ~/.config"
+mv -v ./* ~/.config/
+
+echo "~/.config is now replaced with contents of $(pwd)"
 
 echo "Script execution completed successfully!"
 
