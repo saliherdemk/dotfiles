@@ -76,6 +76,15 @@ cd ..
 rm -rf minegrub-theme
 echo "Minegrub theme installed!"
 
+# Setup default apps
+xdg-mime default firefox.desktop text/html
+xdg-mime default firefox.desktop x-scheme-handler/http
+xdg-mime default firefox.desktop x-scheme-handler/https
+xdg-mime default thunar.desktop inode/directory
+xdg-mime default satty.desktop image/png
+xdg-mime default satty.desktop image/jpeg
+
+
 # For some gnome apps which prefer light mode
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 

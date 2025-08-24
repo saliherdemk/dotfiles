@@ -7,7 +7,7 @@ return {
 
 			---@diagnostic disable-next-line: missing-fields
 			require("nvim-treesitter.configs").setup({
-				ensure_installed = 'all',
+				ensure_installed = {"python", "lua"},
 				-- Autoinstall languages that are not installed
 				auto_install = true,
 				highlight = { enable = true },
