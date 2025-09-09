@@ -2,7 +2,6 @@ alacritty
 alsa-utils
 amd-ucode
 amdvlk
-arduino-ide
 arduino-language-server
 baobab
 base
@@ -73,6 +72,7 @@ networkmanager
 nodejs
 noto-fonts
 npm
+nss-mdns
 ntfs-3g
 nwg-look
 obs-studio

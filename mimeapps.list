@@ -1,0 +1,14 @@
+[Default Applications]
+text/html=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+inode/directory=Thunar.desktop
+x-scheme-handler/discord-1216669957799018608=discord-1216669957799018608.desktop
+application/zip=appimagekit_9666e0b7bf6455f5fd85c02800e3062e-osu_.desktop
+
+[Added Associations]
+image/gif=mirage.desktop;
+application/pdf=firefox.desktop;
+application/zip=appimagekit_9666e0b7bf6455f5fd85c02800e3062e-osu_.desktop;
+text/plain=libreoffice-writer.desktop;
+image/png=satty.desktop;
