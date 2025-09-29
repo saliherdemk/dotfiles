@@ -81,6 +81,9 @@ vim.api.nvim_set_keymap("i", "<C-s>", "<Esc>:w<CR>a", { noremap = true })
 
 vim.api.nvim_set_keymap("i", "jj", "<Esc>", { noremap = true })
 
+vim.keymap.set("i", "<C-BS>", "<C-w>", { noremap = true, silent = true })
+vim.keymap.set("i", "<C-h>", "<C-w>", { noremap = true, silent = true })
+
 function _G.set_terminal_keymaps()
 	local opts = { buffer = 0 }
 	vim.keymap.set("t", "<esc>", [[<C-\><C-n>]], opts)

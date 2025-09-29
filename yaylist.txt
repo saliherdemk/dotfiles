@@ -1,4 +1,5 @@
-appimagelauncher
+appimagelauncher-git
+arduino-ide
 bambustudio-bin
 bt-dualboot
 cpupower-gui-git

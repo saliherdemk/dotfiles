@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-I2C_BUS=8 
+I2C_BUS=$(ddcutil detect | grep -oP '(?<=I2C bus:  /dev/i2c-)\d+')
 
 get_brightness() {
     output=$(ddcutil --bus "$I2C_BUS" getvcp 10 2>/dev/null)
