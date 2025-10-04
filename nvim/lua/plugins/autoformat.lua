@@ -11,6 +11,7 @@ return {
 				lua = { "stylua" },
 				python = { "pyright", "isort", "black" },
 				javascript = { "prettierd" },
+				typescriptreact = { "prettierd" },
 				json = { "prettierd" },
 				html = { "prettierd" },
 				php = { "php-cs-fixer" },

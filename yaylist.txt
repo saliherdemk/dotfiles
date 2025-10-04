@@ -6,6 +6,7 @@ cpupower-gui-git
 downgrade
 google-chrome
 haguichi
+insomnia-bin
 minecraft-launcher
 mirage
 noisetorch-bin

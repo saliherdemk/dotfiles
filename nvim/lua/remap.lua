@@ -91,3 +91,10 @@ function _G.set_terminal_keymaps()
 end
 
 vim.cmd("autocmd! TermOpen term://* lua set_terminal_keymaps()")
+
+vim.keymap.set("n", "<leader>se", function()
+	vim.diagnostic.open_float({
+		focusable = true,
+		scope = "line",
+	})
+end)

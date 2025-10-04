@@ -35,6 +35,12 @@ return {
 
 			lspconfig["html"].setup({
 				capabilities = capabilities,
+				filetypes = { "html", "htmldjango", "tsx", "javascriptreact", "typescriptreact" },
+			})
+
+			lspconfig["emmet_ls"].setup({
+				capabilities = capabilities,
+				filetypes = { "html", "htmldjango", "typescriptreact", "javascriptreact", "tsx", "jsx" },
 			})
 
 			lspconfig["ts_ls"].setup({
@@ -48,21 +54,6 @@ return {
 			lspconfig["tailwindcss"].setup({
 				capabilities = capabilities,
 			})
-
-			-- Uncomment if you want Emmet support
-			-- lspconfig["emmet_ls"].setup({
-			-- 	capabilities = capabilities,
-			-- 	filetypes = {
-			-- 		"html",
-			-- 		"typescriptreact",
-			-- 		"javascriptreact",
-			-- 		"css",
-			-- 		"sass",
-			-- 		"scss",
-			-- 		"less",
-			-- 		"svelte",
-			-- 	},
-			-- })
 
 			-- Pyright setup with external formatting via black
 			lspconfig["pyright"].setup({
