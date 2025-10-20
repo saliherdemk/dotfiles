@@ -17,8 +17,6 @@ return {
 	},
 	{
 		"neovim/nvim-lspconfig",
-		event = { "BufReadPre", "BufNewFile" },
-		lazy = false,
 		dependencies = {
 			{
 				"williamboman/mason-lspconfig.nvim",
@@ -31,61 +29,41 @@ return {
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-			local lspconfig = require("lspconfig")
+			local lspconfig = vim.lsp
 
-			lspconfig["html"].setup({
+			lspconfig.config("*", {
 				capabilities = capabilities,
-				filetypes = { "html", "htmldjango", "tsx", "javascriptreact", "typescriptreact" },
+				root_markers = { ".git" },
 			})
 
-			lspconfig["emmet_ls"].setup({
-				capabilities = capabilities,
-				filetypes = { "html", "htmldjango", "typescriptreact", "javascriptreact", "tsx", "jsx" },
+			lspconfig.config("html", {
+				cmd = { "vscode-html-language-server", "--stdio" },
+				filetypes = { "html" },
 			})
 
-			lspconfig["ts_ls"].setup({
-				capabilities = capabilities,
-			})
+			lspconfig.config("ts_ls", {})
+			lspconfig.config("css_ls", {})
+			lspconfig.config("lua_ls", {})
+			lspconfig.config("jsonls", {})
+			lspconfig.config("tailwindcss", {})
 
-			lspconfig["cssls"].setup({
-				capabilities = capabilities,
-			})
+			lspconfig.config(
+				"emmet_ls",
+				{ filetypes = { "html", "htmldjango", "typescriptreact", "javascriptreact", "tsx", "jsx" } }
+			)
 
-			lspconfig["tailwindcss"].setup({
-				capabilities = capabilities,
-			})
-
-			-- Pyright setup with external formatting via black
-			lspconfig["pyright"].setup({
-				capabilities = capabilities,
-				on_attach = function(client, bufnr)
-					-- Enable formatting
-					client.server_capabilities.documentFormattingProvider = true
-					-- Keymap for formatting
-					vim.api.nvim_buf_set_keymap(
-						bufnr,
-						"n",
-						"<leader>f",
-						"<cmd>lua vim.lsp.buf.format()<CR>",
-						{ noremap = true, silent = true }
-					)
-				end,
-			})
-
-			lspconfig["lua_ls"].setup({
-				capabilities = capabilities,
-			})
-
-			lspconfig["jsonls"].setup({
-				capabilities = capabilities,
-			})
-
-			lspconfig["rust_analyzer"].setup({
-				capabilities = capabilities,
-			})
-
-			lspconfig["intelephense"].setup({
-				capabilities = capabilities,
+			lspconfig.config("pyright", {
+				filetypes = { "python" },
+				root_markers = { "requirements.txt", ".git" },
+				settings = {
+					python = {
+						analysis = {
+							autoSearchPaths = true,
+							diagnosticMode = "workspace",
+							typeCheckingMode = "standart",
+						},
+					},
+				},
 			})
 		end,
 	},

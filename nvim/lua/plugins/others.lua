@@ -79,14 +79,13 @@ return {
 		"linux-cultist/venv-selector.nvim",
 		dependencies = {
 			"neovim/nvim-lspconfig",
-			"mfussenegger/nvim-dap",
-			{ "nvim-telescope/telescope.nvim", branch = "0.1.x", dependencies = { "nvim-lua/plenary.nvim" } },
 		},
-		lazy = false,
-		branch = "regexp",
-		config = function()
-			require("venv-selector").setup()
-		end,
+		ft = "python",
+
+		opts = {
+			search = {}, -- if you add your own searches, they go here.
+			options = {}, -- if you add plugin options, they go here.
+		},
 	},
 	{
 		"akinsho/bufferline.nvim",
