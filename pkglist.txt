@@ -72,8 +72,8 @@ networkmanager
 nodejs
 noto-fonts
 npm
-nss-mdns
 ntfs-3g
+nvm
 nwg-look
 obs-studio
 os-prober
@@ -86,6 +86,7 @@ pipewire-jack
 pipewire-pulse
 plocate
 polkit-kde-agent
+prismlauncher
 pulseaudio-alsa
 pyenv
 python-pip
@@ -106,7 +107,6 @@ steam
 thunar
 thunar-archive-plugin
 thunar-volman
-thunderbird
 timidity++
 tk
 tokei

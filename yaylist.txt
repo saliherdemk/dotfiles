@@ -1,13 +1,14 @@
-appimagelauncher-git
+adwaita-qt6
+appimagelauncher
 arduino-ide
 bambustudio-bin
 bt-dualboot
 cpupower-gui-git
 downgrade
 google-chrome
+grub-customizer
 haguichi
 insomnia-bin
-minecraft-launcher
 mirage
 noisetorch-bin
 pyenv-virtualenv
