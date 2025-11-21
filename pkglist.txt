@@ -5,6 +5,7 @@ arduino-language-server
 baobab
 base
 base-devel
+blender
 blueman
 bluez-utils
 breeze
