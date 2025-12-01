@@ -46,6 +46,7 @@ return {
 			lspconfig.config("lua_ls", {})
 			lspconfig.config("jsonls", {})
 			lspconfig.config("tailwindcss", {})
+			lspconfig.config("csharp_ls", {})
 
 			lspconfig.config(
 				"emmet_ls",

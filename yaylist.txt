@@ -13,6 +13,7 @@ mirage
 noisetorch-bin
 pyenv-virtualenv
 simplicity-sddm-theme-git
+unityhub
 ventoy-bin
 vscodium-bin
 xppenlinux-v3

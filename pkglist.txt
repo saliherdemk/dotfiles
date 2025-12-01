@@ -2,10 +2,10 @@ alacritty
 alsa-utils
 amd-ucode
 arduino-language-server
+aspnet-runtime
 baobab
 base
 base-devel
-blender
 blueman
 bluez-utils
 breeze
@@ -13,6 +13,7 @@ breeze-gtk
 brightnessctl
 btop
 clang
+cloudflared
 composer
 cpupower
 ddcutil
@@ -21,6 +22,7 @@ dnsmasq
 docker
 docker-compose
 dosfstools
+dotnet-sdk
 dunst
 efibootmgr
 efitools
