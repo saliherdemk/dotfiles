@@ -35,9 +35,14 @@ vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 vim.keymap.set("n", "<leader>do", ":DiffviewOpen<CR>")
 vim.keymap.set("n", "<leader>dc", ":DiffviewClose<CR>")
 
-local builtin = require("telescope.builtin")
-vim.keymap.set("n", "<C-p>", builtin.find_files, {})
-vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
+vim.keymap.set("n", "<C-p>", function()
+  require("telescope.builtin").find_files()
+end, {})
+
+vim.keymap.set("n", "<leader>fg", function()
+  require("telescope.builtin").live_grep()
+end, {})
+
 
 local api = require("nvim-tree.api")
 vim.keymap.set("n", "<leader>tg", api.tree.toggle_gitignore_filter)
