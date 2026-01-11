@@ -15,7 +15,7 @@ pyenv-virtualenv
 simplicity-sddm-theme-git
 unityhub
 ventoy-bin
-vscodium-bin
+visual-studio-code-bin
 xppenlinux-v3
 yay
 yay-debug

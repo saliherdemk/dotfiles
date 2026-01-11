@@ -84,72 +84,72 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 })
 
 -- Word skipping in insert mode. Thanks to LLM's.
-vim.keymap.set("i", "<C-Right>", function()
-	local row, col = unpack(vim.api.nvim_win_get_cursor(0))
-	local lines = vim.api.nvim_buf_get_lines(0, row - 1, row + 1, false)
-	local line = lines[1] or ""
-	local next_line = lines[2] or ""
-	local len = #line
-
-	if col >= len then
-		if next_line ~= "" then
-			vim.api.nvim_win_set_cursor(0, { row + 1, 0 })
-		end
-		return
-	end
-
-	col = col + 1
-	while col <= len and not line:sub(col, col):match("[%w_]") do
-		col = col + 1
-	end
-	while col <= len and line:sub(col, col):match("[%w_]") do
-		col = col + 1
-	end
-
-	vim.api.nvim_win_set_cursor(0, { row, col })
-end, { noremap = true, silent = true })
-
-vim.keymap.set("i", "<C-Left>", function()
-	local row, col = unpack(vim.api.nvim_win_get_cursor(0))
-	local line = vim.api.nvim_get_current_line()
-
-	if col == 0 then
-		if row > 1 then
-			local prev_line = vim.api.nvim_buf_get_lines(0, row - 2, row - 1, false)[1] or ""
-			vim.api.nvim_win_set_cursor(0, { row - 1, #prev_line })
-		end
-	else
-		while col > 0 and not line:sub(col, col):match("[%w_]") do
-			col = col - 1
-		end
-		while col > 0 and line:sub(col, col):match("[%w_]") do
-			col = col - 1
-		end
-		vim.api.nvim_win_set_cursor(0, { row, col })
-	end
-end, { noremap = true, silent = true })
-
-vim.keymap.set("i", "<Right>", function()
-	local row, col = unpack(vim.api.nvim_win_get_cursor(0))
-	local line = vim.api.nvim_get_current_line()
-	if col >= #line then
-		local total_lines = vim.api.nvim_buf_line_count(0)
-		if row < total_lines then
-			vim.api.nvim_win_set_cursor(0, { row + 1, 0 })
-		end
-	else
-		vim.api.nvim_win_set_cursor(0, { row, col + 1 })
-	end
-end, { noremap = true, silent = true })
-
-vim.keymap.set("i", "<Left>", function()
-	local row, col = unpack(vim.api.nvim_win_get_cursor(0))
-	if col == 0 then
-		if row > 1 then
-			local prev_line = vim.api.nvim_buf_get_lines(0, row - 2, row - 1, false)[1] or ""
-			vim.api.nvim_win_set_cursor(0, { row - 1, #prev_line })
-		end
-	else
-		vim.api.nvim_win_set_cursor(0, { row, col - 1 })
-	end
-end, { noremap = true, silent = true })
+-- vim.keymap.set("i", "<C-Right>", function()
+-- 	local row, col = unpack(vim.api.nvim_win_get_cursor(0))
+-- 	local lines = vim.api.nvim_buf_get_lines(0, row - 1, row + 1, false)
+-- 	local line = lines[1] or ""
+-- 	local next_line = lines[2] or ""
+-- 	local len = #line
+--
+-- 	if col >= len then
+-- 		if next_line ~= "" then
+-- 			vim.api.nvim_win_set_cursor(0, { row + 1, 0 })
+-- 		end
+-- 		return
+-- 	end
+--
+-- 	col = col + 1
+-- 	while col <= len and not line:sub(col, col):match("[%w_]") do
+-- 		col = col + 1
+-- 	end
+-- 	while col <= len and line:sub(col, col):match("[%w_]") do
+-- 		col = col + 1
+-- 	end
+--
+-- 	vim.api.nvim_win_set_cursor(0, { row, col })
+-- end, { noremap = true, silent = true })
+--
+-- vim.keymap.set("i", "<C-Left>", function()
+-- 	local row, col = unpack(vim.api.nvim_win_get_cursor(0))
+-- 	local line = vim.api.nvim_get_current_line()
+--
+-- 	if col == 0 then
+-- 		if row > 1 then
+-- 			local prev_line = vim.api.nvim_buf_get_lines(0, row - 2, row - 1, false)[1] or ""
+-- 			vim.api.nvim_win_set_cursor(0, { row - 1, #prev_line })
+-- 		end
+-- 	else
+-- 		while col > 0 and not line:sub(col, col):match("[%w_]") do
+-- 			col = col - 1
+-- 		end
+-- 		while col > 0 and line:sub(col, col):match("[%w_]") do
+-- 			col = col - 1
+-- 		end
+-- 		vim.api.nvim_win_set_cursor(0, { row, col })
+-- 	end
+-- end, { noremap = true, silent = true })
+--
+-- vim.keymap.set("i", "<Right>", function()
+-- 	local row, col = unpack(vim.api.nvim_win_get_cursor(0))
+-- 	local line = vim.api.nvim_get_current_line()
+-- 	if col >= #line then
+-- 		local total_lines = vim.api.nvim_buf_line_count(0)
+-- 		if row < total_lines then
+-- 			vim.api.nvim_win_set_cursor(0, { row + 1, 0 })
+-- 		end
+-- 	else
+-- 		vim.api.nvim_win_set_cursor(0, { row, col + 1 })
+-- 	end
+-- end, { noremap = true, silent = true })
+--
+-- vim.keymap.set("i", "<Left>", function()
+-- 	local row, col = unpack(vim.api.nvim_win_get_cursor(0))
+-- 	if col == 0 then
+-- 		if row > 1 then
+-- 			local prev_line = vim.api.nvim_buf_get_lines(0, row - 2, row - 1, false)[1] or ""
+-- 			vim.api.nvim_win_set_cursor(0, { row - 1, #prev_line })
+-- 		end
+-- 	else
+-- 		vim.api.nvim_win_set_cursor(0, { row, col - 1 })
+-- 	end
+-- end, { noremap = true, silent = true })
