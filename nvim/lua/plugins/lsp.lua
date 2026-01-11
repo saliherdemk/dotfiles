@@ -11,11 +11,19 @@ return {
 		lazy = false,
 		opts = {
 			ensure_installed = {
+				-- LSP servers
 				"omnisharp",
+				"pyright",
+				"lua-language-server",
+				"css-lsp",
+				"html-lsp",
+				"json-lsp",
+				"typescript-language-server",
+
+				-- Formatters
 				"csharpier",
 				"black",
 				"prettierd",
-				"pyright",
 				"stylua",
 			},
 			auto_update = false,
@@ -23,6 +31,7 @@ return {
 			debounce_hours = 24,
 		},
 	},
+
 	{
 		"neovim/nvim-lspconfig",
 		dependencies = {
@@ -51,14 +60,11 @@ return {
 			lspconfig.config("cssls", {})
 			lspconfig.config("lua_ls", {})
 			lspconfig.config("jsonls", {})
-			lspconfig.config("tailwindcss", {})
-			lspconfig.config("omnisharp", { -- Changed from csharp_ls
+			lspconfig.config("omnisharp", {
 				filetypes = { "cs" },
 				root_markers = { "*.sln", "*.csproj", ".git" },
 			})
-			lspconfig.config("emmet_ls", {
-				filetypes = { "html", "htmldjango", "typescriptreact", "javascriptreact", "tsx", "jsx" },
-			})
+
 			lspconfig.config("pyright", {
 				filetypes = { "python" },
 				root_markers = { "requirements.txt", ".git" },
@@ -78,9 +84,7 @@ return {
 			lspconfig.enable("cssls")
 			lspconfig.enable("lua_ls")
 			lspconfig.enable("jsonls")
-			lspconfig.enable("tailwindcss")
-			lspconfig.enable("omnisharp") -- Changed from csharp_ls
-			lspconfig.enable("emmet_ls")
+			lspconfig.enable("omnisharp")
 			lspconfig.enable("pyright")
 		end,
 	},
