@@ -12,4 +12,15 @@
 	<startup-notify/>
 	<directories/>
 </action>
+<action>
+	<icon></icon>
+	<name>Merge Pdfs</name>
+	<submenu></submenu>
+	<unique-id>1768997700824639-1</unique-id>
+	<command>pdfunite %F merged.pdf</command>
+	<description>Merge selected PDF files into one</description>
+	<range>*</range>
+	<patterns>*.pdf</patterns>
+	<other-files/>
+</action>
 </actions>

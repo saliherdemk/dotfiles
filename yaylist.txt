@@ -3,7 +3,6 @@ appimagelauncher
 arduino-ide
 bambustudio-bin
 bt-dualboot
-cpupower-gui-git
 downgrade
 google-chrome
 grub-customizer

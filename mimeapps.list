@@ -8,11 +8,11 @@ application/zip=appimagekit_9666e0b7bf6455f5fd85c02800e3062e-osu_.desktop
 application/x-zerosize=libreoffice-writer.desktop
 
 [Added Associations]
-image/gif=mirage.desktop;
+image/gif=firefox.desktop;mirage.desktop;
 application/pdf=firefox.desktop;
 application/zip=org.gnome.FileRoller.desktop;libreoffice-calc.desktop;appimagekit_9666e0b7bf6455f5fd85c02800e3062e-osu_.desktop;
 text/plain=libreoffice-writer.desktop;
 image/png=satty.desktop;
 model/stl=appimagekit_bb95a2335f11d783b05870f7393609f6-UltiMaker_Cura.desktop;
-image/jpeg=mirage.desktop;satty.desktop;
-application/x-zerosize=libreoffice-writer.desktop;
+image/jpeg=satty.desktop;mirage.desktop;
+application/x-zerosize=libreoffice-startcenter.desktop;libreoffice-writer.desktop;

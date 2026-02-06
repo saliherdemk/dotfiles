@@ -118,7 +118,6 @@ ttf-dejavu
 ttf-jetbrains-mono-nerd
 ttf-roboto
 unzip
-vi
 vim
 vlc
 vlc-plugin-ffmpeg

@@ -54,7 +54,7 @@
     "format": " {max_frequency}GHz <span color=\"darkgray\">| {usage}%</span>",
     "max-length": 15,
     "min-length": 15,
-    "on-click": "cpupower-gui"
+    "on-click": "corectrl"
   },
   "network": {
     "format-wifi": "  {signalStrength}%",
