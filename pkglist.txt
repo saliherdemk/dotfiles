@@ -15,6 +15,7 @@ btop
 clang
 cloudflared
 composer
+corectrl
 cpupower
 ddcutil
 discord
