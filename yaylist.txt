@@ -1,8 +1,11 @@
 adwaita-qt6
+antigravity
 appimagelauncher
 arduino-ide
 bambustudio-bin
 bt-dualboot
+claude-code
+docker-desktop
 downgrade
 google-chrome
 grub-customizer

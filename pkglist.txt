@@ -14,6 +14,7 @@ brightnessctl
 btop
 clang
 cloudflared
+cmake
 composer
 corectrl
 cpupower
@@ -21,7 +22,6 @@ ddcutil
 discord
 dnsmasq
 docker
-docker-compose
 dosfstools
 dotnet-sdk
 dunst
@@ -49,6 +49,7 @@ gst-plugin-pipewire
 gvfs
 gvfs-mtp
 gvfs-smb
+gwenview
 hugo
 hypridle
 hyprland

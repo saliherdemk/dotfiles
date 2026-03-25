@@ -111,29 +111,18 @@ local function spider(motion)
 	end
 end
 
-vim.keymap.set({ "n", "x", "o" }, "w", spider("w"), { silent = true })
-vim.keymap.set({ "n", "x", "o" }, "e", spider("e"), { silent = true })
-vim.keymap.set({ "n", "x", "o" }, "b", spider("b"), { silent = true })
-
 vim.keymap.set("i", "<C-Right>", spider("w"), { silent = true })
 vim.keymap.set("i", "<C-Left>", spider("b"), { silent = true })
 
--- Delete previous word in insert mode (Ctrl+Backspace)
 vim.keymap.set("i", "<C-BS>", function()
+	local spider = require("spider")
+
 	local row, col = unpack(vim.api.nvim_win_get_cursor(0))
-	local line = vim.api.nvim_get_current_line()
 
-	-- nothing to delete
-	if col == 0 then
-		return
-	end
-
-	-- Find start of previous "word" (letters, numbers, or _)
-	local left = line:sub(1, col)
-	local start_col = left:find("[%w_]+[^%w_]*$") or 1
-
-	-- Delete from start_col-1 to col
-	local new_line = left:sub(1, start_col - 1) .. line:sub(col + 1)
-	vim.api.nvim_set_current_line(new_line)
-	vim.api.nvim_win_set_cursor(0, { row, start_col - 1 })
+	vim.cmd("stopinsert")
+	spider.motion("b")
+	vim.cmd("normal! v")
+	vim.api.nvim_win_set_cursor(0, { row, col })
+	vim.cmd("normal! d")
+	vim.cmd("normal! a")
 end, { silent = true })
