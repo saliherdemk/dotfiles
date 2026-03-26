@@ -8,7 +8,6 @@ nwg-look
 pulse
 sqlitebrowser
 xfce4/xfconf
-xsettingsd
 pavucontrol.ini
 user-dirs.dirs
 user-dirs.locale
@@ -50,3 +49,4 @@ Code
 corectrl
 gwenviewrc
 kactivitymanagerdrc
+mozilla

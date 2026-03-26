@@ -46,10 +46,18 @@ sudo cp -r sddm/simplicity /usr/share/sddm/themes/
 echo "Changing SDDM theme to simplicity"
 sudo sed -i 's/^Current=.*$/Current=simplicity/' /usr/lib/sddm/sddm.conf.d/default.conf
 
+# I2C
+sudo modprobe i2c-dev
+
+# Font
+sudo fc-cache -fv
+
 echo "Enabling services"
 
 sudo systemctl enable sddm
 sudo systemctl enable NetworkManager
+sudo systemctl enable pipewire.socker
+sudo systemctl enable pipewire-pulse.socket
 
 # Zsh configuration
 echo "Copying .p10k.zsh to home directory"
