@@ -56,8 +56,8 @@ echo "Enabling services"
 
 sudo systemctl enable sddm
 sudo systemctl enable NetworkManager
-sudo systemctl enable pipewire.socker
-sudo systemctl enable pipewire-pulse.socket
+systemctl --user enable --now pipewire.socket
+systemctl --user enable --now pipewire-pulse.socket
 
 # Zsh configuration
 echo "Copying .p10k.zsh to home directory"
