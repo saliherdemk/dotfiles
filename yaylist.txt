@@ -6,10 +6,9 @@ google-chrome
 grub-customizer
 noisetorch-bin
 pyenv-virtualenv
-simplicity-sddm-theme-git
 unityhub
 ventoy-bin
 visual-studio-code-bin
+xppenlinux-v3
 yay
 yay-debug
-xppenlinux-v3
