@@ -34,6 +34,7 @@ hyprland
 hyprlock
 hyprpaper
 hyprpicker
+hyprpolkitagent
 jq
 kdeconnect
 libreoffice-fresh
@@ -52,7 +53,6 @@ os-prober
 pavucontrol
 pipewire
 pipewire-pulse
-polkit-kde-agent
 prismlauncher
 pyenv
 qpwgraph
