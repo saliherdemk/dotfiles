@@ -8,6 +8,7 @@ application/zip=appimagekit_9666e0b7bf6455f5fd85c02800e3062e-osu_.desktop
 application/x-zerosize=libreoffice-writer.desktop
 image/png=satty.desktop
 image/jpeg=satty.desktop
+x-scheme-handler/claude-cli=claude-code-url-handler.desktop
 
 [Added Associations]
 image/gif=firefox.desktop;mirage.desktop;

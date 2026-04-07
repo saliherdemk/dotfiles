@@ -102,27 +102,3 @@ vim.keymap.set("n", "<leader>se", function()
 		scope = "line",
 	})
 end)
-
--- Subword Config
-
-local function spider(motion)
-	return function()
-		require("spider").motion(motion)
-	end
-end
-
-vim.keymap.set("i", "<C-Right>", spider("w"), { silent = true })
-vim.keymap.set("i", "<C-Left>", spider("b"), { silent = true })
-
-vim.keymap.set("i", "<C-BS>", function()
-	local spider = require("spider")
-
-	local row, col = unpack(vim.api.nvim_win_get_cursor(0))
-
-	vim.cmd("stopinsert")
-	spider.motion("b")
-	vim.cmd("normal! v")
-	vim.api.nvim_win_set_cursor(0, { row, col })
-	vim.cmd("normal! d")
-	vim.cmd("normal! a")
-end, { silent = true })

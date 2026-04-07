@@ -1,5 +1,6 @@
 alacritty
 amd-ucode
+android-tools
 baobab
 base
 base-devel
@@ -37,6 +38,7 @@ hyprpicker
 hyprpolkitagent
 jq
 kdeconnect
+less
 libreoffice-fresh
 linux
 linux-firmware
@@ -44,12 +46,15 @@ nano
 neovim
 network-manager-applet
 networkmanager
+nfs-utils
 nodejs
 npm
+ntfs-3g
 nvm
 nwg-look
 obs-studio
 os-prober
+pacman-contrib
 pavucontrol
 pipewire
 pipewire-pulse
@@ -61,6 +66,7 @@ qt6-wayland
 qt6ct
 ripgrep
 rofi
+rsync
 satty
 sddm
 slurp
@@ -69,6 +75,7 @@ sudo
 thunar
 thunar-archive-plugin
 thunar-volman
+tk
 ttf-jetbrains-mono-nerd
 vlc
 vlc-plugin-ffmpeg
