@@ -17,11 +17,18 @@ return {
 	-- "gc" to comment visual regions/lines
 	{
 		"numToStr/Comment.nvim",
-		dependencies = { "JoosepAlviste/nvim-ts-context-commentstring" },
-		opts = function()
-			return {
-				pre_hook = require("ts_context_commentstring.integrations.comment_nvim").create_pre_hook(),
-			}
+		dependencies = {
+			"JoosepAlviste/nvim-ts-context-commentstring",
+		},
+		config = function()
+			require("ts_context_commentstring").setup({})
+
+			require("Comment").setup({
+				pre_hook = function(ctx)
+					local ts_hook = require("ts_context_commentstring.integrations.comment_nvim").create_pre_hook()
+					return ts_hook(ctx) or vim.bo.commentstring
+				end,
+			})
 		end,
 	},
 	{
@@ -75,7 +82,6 @@ return {
 		"linux-cultist/venv-selector.nvim",
 		dependencies = {
 			"neovim/nvim-lspconfig",
-			{ "nvim-telescope/telescope.nvim", branch = "0.1.x", dependencies = { "nvim-lua/plenary.nvim" } }, -- optional: you can also use fzf-lua, snacks, mini-pick instead.
 		},
 		ft = "python", -- Load when opening Python files
 		keys = {

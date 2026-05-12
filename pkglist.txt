@@ -13,6 +13,8 @@ corectrl
 ddcutil
 discord
 docker
+dotnet-runtime
+dotnet-sdk
 dunst
 efibootmgr
 fastfetch
@@ -58,6 +60,7 @@ os-prober
 pacman-contrib
 pavucontrol
 pipewire
+pipewire-alsa
 pipewire-pulse
 prismlauncher
 pyenv
