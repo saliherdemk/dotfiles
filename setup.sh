@@ -73,6 +73,9 @@ cp zsh/.zshrc ~/.zshrc
 echo "Changing default shell to zsh"
 sudo chsh -s /usr/bin/zsh $(whoami)
 
+# nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.5/install.sh | bash
+
 # MINEGRUUUB
 git clone https://github.com/Lxtharia/minegrub-theme.git
 cd ./minegrub-theme

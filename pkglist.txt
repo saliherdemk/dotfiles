@@ -1,6 +1,7 @@
 alacritty
 amd-ucode
 android-tools
+aspnet-runtime
 baobab
 base
 base-devel
@@ -53,9 +54,10 @@ nfs-utils
 nodejs
 npm
 ntfs-3g
-nvm
 nwg-look
 obs-studio
+ollama-rocm
+opencode
 os-prober
 pacman-contrib
 pavucontrol
