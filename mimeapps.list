@@ -10,6 +10,10 @@ image/png=satty.desktop
 image/jpeg=satty.desktop
 x-scheme-handler/claude-cli=claude-code-url-handler.desktop
 text/plain=appimagekit_69eb7bd7a21159f01b0d4c279a1528d0-osu_.desktop
+application/octet-stream=realm-studio.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-9FFMQ3.desktop
+message/rfc822=userapp-Thunderbird-9FFMQ3.desktop
+x-scheme-handler/mid=userapp-Thunderbird-9FFMQ3.desktop
 
 [Added Associations]
 image/gif=firefox.desktop;mirage.desktop;
@@ -20,3 +24,6 @@ image/png=org.kde.gwenview.desktop;satty.desktop;
 model/stl=appimagekit_bb95a2335f11d783b05870f7393609f6-UltiMaker_Cura.desktop;
 image/jpeg=satty.desktop;mirage.desktop;
 application/x-zerosize=libreoffice-startcenter.desktop;libreoffice-writer.desktop;
+application/octet-stream=realm-studio.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-9FFMQ3.desktop;userapp-Evolution-8XRWQ3.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-9FFMQ3.desktop;

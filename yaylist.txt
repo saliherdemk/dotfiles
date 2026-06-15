@@ -1,11 +1,12 @@
-antigravity
 appimagelauncher
+betterbird-bin
 claude-code
 docker-desktop
 google-chrome
 grub-customizer
 noisetorch-bin
 pyenv-virtualenv
+realm-studio-bin
 unityhub
 ventoy-bin
 visual-studio-code-bin
