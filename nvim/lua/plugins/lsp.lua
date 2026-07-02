@@ -19,12 +19,14 @@ return {
 				"html-lsp",
 				"json-lsp",
 				"typescript-language-server",
+				"clangd",
 
 				-- Formatters
 				"csharpier",
 				"black",
 				"prettierd",
 				"stylua",
+				"clang-format",
 			},
 			auto_update = false,
 			start_delay = 3000,

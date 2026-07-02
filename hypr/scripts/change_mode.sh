@@ -1,23 +1,16 @@
 #!/bin/bash
 
-# File to store the current state
 STATE_FILE="/tmp/hypr-submap"
 
-# Check if the state file exists and read its value
-if [ -f "$STATE_FILE" ]; then
-    STATE=$(cat "$STATE_FILE")
-else
-    STATE=""
-fi
+LOCK=$''    
+UNLOCK=$''
 
-# Toggle the state
-if [ "$STATE" == "" ]; then
+STATE=$(cat "$STATE_FILE" 2>/dev/null)
+
+if [ "$STATE" == "$LOCK" ]; then
     hyprctl dispatch submap reset
-    STATE=""
+    echo "$UNLOCK" > "$STATE_FILE"
 else
     hyprctl dispatch submap gaming
-    STATE=""
+    echo "$LOCK" > "$STATE_FILE"
 fi
-
-# Save the new state to the file
-echo "$STATE" > "$STATE_FILE"
