@@ -1,85 +1,69 @@
 local vars = require("modules.variables")
 
--- See https://wiki.hypr.land/Configuring/Basics/Window-Rules/
-
 hl.window_rule({
-	name = "audio_control",
-	match = { class = vars.audioGui },
-	float = true,
+  name = "bluetooth_control",
+  float = true,
+  match = { class = vars.bluetoothGui },
 })
 
 hl.window_rule({
-	name = "bluetooth_control",
-	match = { class = vars.bluetoothGui },
-	float = true,
+  name = "qpwgraph_config",
+  float = true,
+  size = "1000 600",
+  match = { class = "org\\.rncbc\\.qpwgraph$" },
 })
 
 hl.window_rule({
-	name = "pavucontrol_refined",
-	match = { class = "^(org\\.pulseaudio\\.pavucontrol|" .. vars.audioGui .. "|org.corectrl.CoreCtrl)$" },
-	float = true,
-	center = true,
-	size = "1000 600",
+  name = "satty",
+  float = true,
+  size = "1200 600",
+  match = { class = "com\\.gabm\\.satty$" },
 })
 
 hl.window_rule({
-	name = "qpwgraph_config",
-	match = { class = "org\\.rncbc\\.qpwgraph$" },
-	float = true,
-	center = true,
-	size = "1000 600",
+  name = "steam_friends",
+  float = true,
+  size = "650 812",
+  move = "1265 212",
+  match = { class = "steam$", title = "Friends List$" },
 })
 
 hl.window_rule({
-	name = "satty",
-	match = { class = "com\\.gabm\\.satty$" },
-	float = true,
-	center = true,
-	size = "1000 600",
+  name = "file_roller",
+  float = true,
+  match = { class = "org.gnome.FileRoller$" },
 })
 
 hl.window_rule({
-	name = "steam_friends",
-	match = { class = "steam$", title = "Friends List$" },
-	float = true,
-	size = "650 812",
-	move = "1265 212",
+  name = "calculator_main",
+  float = true,
+  size = "673 806",
+  match = { class = "org.gnome.Calculator$" },
 })
 
 hl.window_rule({
-	name = "file_roller",
-	match = { class = "org.gnome.FileRoller$" },
-	float = true,
+  name = "fm_opacity",
+  opacity = "0.8 0.8",
+  match = { class = vars.fileManager },
 })
 
 hl.window_rule({
-	name = "calculator_main",
-	match = { class = "org.gnome.Calculator$" },
-	float = true,
-	center = true,
-	size = "673 806",
+  name = "godot_popups",
+  float = true,
+  match = { class = "Godot$", title = "Create New Node$" },
 })
 
 hl.window_rule({
-	name = "terminal_opacity",
-	match = { class = vars.terminal },
-	opacity = "0.8 0.8",
+  name = "pavucontrol",
+  float = true,
+  size = "1000 600",
+  match = { class = "org.pulseaudio.pavucontrol$" },
 })
 
 hl.window_rule({
-	name = "fm_opacity",
-	match = { class = vars.fileManager },
-	opacity = "0.8 0.8",
+  name = "mozaik_rule",
+  float = true,
+  size = "1200 800",
+  match = { class = "mozaik$", title = "Mozaik - Rule Manager$" },
 })
 
-hl.window_rule({
-	name = "godot_main",
-	match = { class = "Godot$" },
-	tile = true,
-})
-
-hl.window_rule({
-	name = "godot_popups",
-	match = { class = "Godot$", title = "Create New Node$" },
-	float = true,
-})

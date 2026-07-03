@@ -4,6 +4,7 @@ claude-code
 docker-desktop
 google-chrome
 grub-customizer
+mozaik
 noisetorch-bin
 pyenv-virtualenv
 realm-studio-bin
