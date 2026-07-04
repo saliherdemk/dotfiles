@@ -46,6 +46,7 @@ less
 libreoffice-fresh
 linux
 linux-firmware
+mkinitcpio
 nano
 neovim
 network-manager-applet
