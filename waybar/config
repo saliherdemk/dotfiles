@@ -1,20 +1,16 @@
 {
-
     "layer": "top",
-    
     "position": "top",
-
     "margin-left": 10,
     "margin-bottom": 0,
     "margin-right": 10,
-
     "spacing": 5,
-
-    "include": ["~/.config/waybar/modules.json"],
-
+    "include": [
+        "~/.config/waybar/modules.json"
+    ],
     "modules-left": [
         "wlr/taskbar",
-        "hyprland/workspaces",
+        "hyprland/workspaces"
     ],
     "modules-center": [
         "clock"
@@ -28,6 +24,6 @@
         "network",
         "pulseaudio",
         "group/brighttery",
-        "tray",
-    ],
+        "tray"
+    ]
 }

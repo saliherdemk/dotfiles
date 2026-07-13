@@ -7,7 +7,6 @@ local appLauncher = vars.appLauncher
 
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + X", hl.dsp.window.close())
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("swaylock"))
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("wlogout --protocol layer-shell"))
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("firefox"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
@@ -78,11 +77,11 @@ hl.bind(
 	)
 )
 
-hl.bind("SUPER + SPACE", hl.dsp.exec_cmd('echo "" > /tmp/hypr-submap'))
+hl.bind("SUPER + SPACE", hl.dsp.exec_cmd('echo "" > /tmp/hypr-submap'))
 
 hl.bind("SUPER + SPACE", hl.dsp.submap("gaming"))
 
 hl.define_submap("gaming", function()
-	hl.bind("SUPER + SPACE", hl.dsp.exec_cmd('echo "" > /tmp/hypr-submap'))
+	hl.bind("SUPER + SPACE", hl.dsp.exec_cmd('echo "" > /tmp/hypr-submap'))
 	hl.bind("SUPER + SPACE", hl.dsp.submap("reset"))
 end)
