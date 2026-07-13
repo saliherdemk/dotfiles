@@ -5,7 +5,6 @@ docker-desktop
 google-chrome
 grub-customizer
 mozaik
-noisetorch-bin
 pyenv-virtualenv
 realm-studio-bin
 unityhub
@@ -13,4 +12,3 @@ ventoy-bin
 visual-studio-code-bin
 xppenlinux-v3
 yay
-yay-debug

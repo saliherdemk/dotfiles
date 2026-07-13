@@ -17,6 +17,7 @@ docker
 dotnet-runtime
 dotnet-sdk
 dunst
+easyeffects
 efibootmgr
 fastfetch
 fd
@@ -46,7 +47,6 @@ less
 libreoffice-fresh
 linux
 linux-firmware
-mkinitcpio
 nano
 neovim
 network-manager-applet

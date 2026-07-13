@@ -18,7 +18,7 @@ x-scheme-handler/mid=userapp-Thunderbird-9FFMQ3.desktop
 [Added Associations]
 image/gif=firefox.desktop;mirage.desktop;
 application/pdf=firefox.desktop;
-application/zip=appimagekit_69eb7bd7a21159f01b0d4c279a1528d0-osu_.desktop;org.gnome.FileRoller.desktop;libreoffice-calc.desktop;appimagekit_9666e0b7bf6455f5fd85c02800e3062e-osu_.desktop;
+application/zip=org.gnome.FileRoller.desktop;appimagekit_69eb7bd7a21159f01b0d4c279a1528d0-osu_.desktop;libreoffice-calc.desktop;appimagekit_9666e0b7bf6455f5fd85c02800e3062e-osu_.desktop;
 text/plain=libreoffice-writer.desktop;appimagekit_69eb7bd7a21159f01b0d4c279a1528d0-osu_.desktop;
 image/png=org.kde.gwenview.desktop;satty.desktop;
 model/stl=appimagekit_bb95a2335f11d783b05870f7393609f6-UltiMaker_Cura.desktop;
