@@ -58,6 +58,14 @@ hl.window_rule({
 hl.window_rule({
   name = "org.gnome.fileroller_rule",
   float = true,
-  match = { class = "org.gnome.FileRoller$", title = "Downloads.zip $" },
+  match = { class = "org.gnome.FileRoller$" },
+})
+
+hl.window_rule({
+  name = "blender_rule",
+  float = true,
+  size = "1000 800",
+  move = "100 100",
+  match = { class = "blender$", initial_title = "File Browser$" },
 })
 

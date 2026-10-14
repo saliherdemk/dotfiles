@@ -5,6 +5,7 @@ aspnet-runtime
 baobab
 base
 base-devel
+blender
 blueman
 breeze
 brightnessctl
@@ -57,7 +58,6 @@ npm
 ntfs-3g
 nwg-look
 obs-studio
-ollama-rocm
 opencode
 os-prober
 pacman-contrib
@@ -78,7 +78,6 @@ rust
 satty
 sddm
 slurp
-steam
 sudo
 thunar
 thunar-archive-plugin
