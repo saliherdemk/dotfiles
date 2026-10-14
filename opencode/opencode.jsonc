@@ -1,0 +1,44 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "openai/gpt-6.1-sol",
+  "default_agent": "build",
+  "agents": {
+    "build": {
+      "model": "openai/gpt-6.1-sol",
+      "permissions": [
+        { "action": "subagent", "resource": "*", "effect": "deny" },
+        { "action": "subagent", "resource": "explore", "effect": "allow" }
+      ]
+    },
+    "explore": {
+      "model": "openai/gpt-6-luna#low",
+      "description": "Luna: read-only codebase exploration. Locate files, understand dependencies and return concise implementation guidance to Sol.",
+      "system": "You are Luna, the read-only exploration subagent. Locate relevant files and symbols, understand behavior and dependencies, and return concise findings for Sol to implement. Include paths, constraints, suggested approach and relevant tests. Do not return whole files. Never modify files, execute shell commands or delegate. Use read, glob and grep only.",
+      "permissions": [
+        { "action": "*", "resource": "*", "effect": "deny" },
+        { "action": "read", "resource": "*", "effect": "allow" },
+        { "action": "glob", "resource": "*", "effect": "allow" },
+        { "action": "grep", "resource": "*", "effect": "allow" },
+        { "action": "read", "resource": "*.env", "effect": "deny" },
+        { "action": "read", "resource": "*.env.*", "effect": "deny" },
+        { "action": "read", "resource": "*.pem", "effect": "deny" },
+        { "action": "read", "resource": "*.key", "effect": "deny" }
+      ]
+    }
+  },
+  "mcp": {
+    "servers": {
+      "blender-mcp": {
+        "type": "local",
+        "command": ["/home/saliherdemk/.local/bin/uvx", "mcp-for-blender"],
+        "environment": {
+          "BLENDER_HOST": "localhost",
+          "BLENDER_PORT": "9876"
+        }
+      }
+    }
+  },
+  "plugins": [
+    "@dietrichgebert/ponytail"
+  ]
+}
