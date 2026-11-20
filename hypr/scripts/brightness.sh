@@ -1,9 +1,35 @@
 #!/usr/bin/env sh
 
-I2C_BUS=$(ddcutil detect | grep -oP '(?<=I2C bus:  /dev/i2c-)\d+')
+cache_dir=${XDG_RUNTIME_DIR:-${XDG_CACHE_HOME:-"$HOME/.cache"}}
+mkdir -p "$cache_dir" || exit 1
+bus_cache="$cache_dir/waybar-brightness-bus"
+
+detect_bus() {
+    # shortcut: controls the first detected monitor; select explicitly for multiple monitors.
+    I2C_BUS=$(ddcutil detect | grep -m1 -oP '(?<=I2C bus:  /dev/i2c-)\d+')
+    case "$I2C_BUS" in
+        ''|*[!0-9]*) return 1 ;;
+    esac
+    printf '%s\n' "$I2C_BUS" > "$bus_cache" || return 1
+}
+
+monitor_command() {
+    I2C_BUS=$(cat "$bus_cache" 2>/dev/null)
+    case "$I2C_BUS" in
+        ''|*[!0-9]*) detect_bus || return 1 ;;
+    esac
+    if ddcutil --bus "$I2C_BUS" "$@"; then
+        return 0
+    fi
+    detect_bus || return 1
+    ddcutil --bus "$I2C_BUS" "$@"
+}
 
 get_brightness() {
-    output=$(ddcutil --bus "$I2C_BUS" getvcp 10 2>/dev/null)
+    output=$(monitor_command getvcp 10 2>/dev/null) || {
+        echo '{"error": "Unable to retrieve current brightness."}'
+        exit 1
+    }
 
     if echo "$output" | grep -q "current value"; then
         current_brightness=$(echo "$output" | grep -oP '(?<=current value = )\s*\d+')
@@ -35,9 +61,9 @@ adjust_brightness() {
     fi
 
     if [ "$direction" = "+" ]; then
-        new_brightness=$((current_brightness + 10)) 
+        new_brightness=$((current_brightness + 5))
     elif [ "$direction" = "-" ]; then
-        new_brightness=$((current_brightness - 10))  
+        new_brightness=$((current_brightness - 5))
     else
         echo "{\"error\": \"Invalid direction. Use '+' or '-'.\"}"
         exit 1
@@ -49,7 +75,7 @@ adjust_brightness() {
         new_brightness=100
     fi
 
-    ddcutil --bus "$I2C_BUS" --sleep-multiplier 0.2 setvcp 10 "$new_brightness"
+    monitor_command --sleep-multiplier 0.2 setvcp 10 "$new_brightness" || exit 1
 }
 
 if [ "$1" = "get" ]; then
@@ -58,4 +84,3 @@ else
     adjust_brightness "$1"
     get_brightness 
 fi
-

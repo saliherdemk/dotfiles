@@ -1,0 +1,8 @@
+{
+  "name": "codex-limits",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./tui": "./dist/tui.js"
+  }
+}

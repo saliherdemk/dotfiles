@@ -91,11 +91,13 @@
     "on-click": "bash ~/.config/hypr/scripts/change_mode.sh",
     "interval": 1
   },
-  "backlight": {
-    "device": "amdgpu_bl1",
-    "format": "{icon}",
-    "tooltip-format": "{percent}% {icon}",
-    "format-icons": ["󰃞", "󰃝", "󰃟", "󰃠"]
+  "custom/backlight": {
+    "exec-if": "test -d /sys/class/backlight/amdgpu_bl1",
+    "exec": "bash ~/.config/hypr/scripts/backlight.sh",
+    "return-type": "json",
+    "interval": 2,
+    "on-scroll-up": "brightnessctl -d amdgpu_bl1 set +1%",
+    "on-scroll-down": "brightnessctl -d amdgpu_bl1 set 1%-"
   },
   "custom/brightness": {
     "format": "{}",
@@ -126,7 +128,7 @@
       "custom/keyboard_mode",
       "battery",
       "custom/battery",
-      "backlight",
+      "custom/backlight",
       "custom/brightness"
     ]
   },

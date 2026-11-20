@@ -7,9 +7,10 @@ OpenCode automatically discovers this folder under its global config directory.
 No npm quota plugin entry, build step, cache path, or absolute path is needed.
 OpenCode supplies the plugin and TUI runtime imports.
 
-Copy this entire folder and `../../cli.json` to another PC's OpenCode config
-directory. Use OpenCode V2 and connect OpenAI through ChatGPT OAuth on that PC.
-Do not copy credentials between PCs.
+Keep this entire folder, including `package.json`, and `../../cli.json` in the
+dotfiles repo. Copy them to another PC's OpenCode config directory. Use
+OpenCode V2 and connect OpenAI through ChatGPT OAuth on that PC. Do not copy
+credentials between PCs.
 
 `cli.json` disables `opencode.prompt.footer`, replacing the built-in context,
 command, cost, and background-task hints with the custom context indicator.
