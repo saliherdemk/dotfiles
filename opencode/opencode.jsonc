@@ -39,6 +39,7 @@
     }
   },
   "plugins": [
-    "@dietrichgebert/ponytail"
+    "@dietrichgebert/ponytail",
+    "@yassirh/opencode-codex-limits-plugin"
   ]
 }

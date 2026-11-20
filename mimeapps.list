@@ -15,6 +15,8 @@ x-scheme-handler/mailto=userapp-Betterbird-EZZYV3.desktop
 message/rfc822=userapp-Betterbird-EZZYV3.desktop
 x-scheme-handler/mid=userapp-Betterbird-EZZYV3.desktop
 x-scheme-handler/net.thunderbird=userapp-Betterbird-WKHYV3.desktop
+model/stl=appimagekit_17083281813b235ce067219863620499-UltiMaker_Cura.desktop
+text/x.gcode=appimagekit_17083281813b235ce067219863620499-UltiMaker_Cura.desktop
 
 [Added Associations]
 image/gif=firefox.desktop;mirage.desktop;
@@ -22,7 +24,7 @@ application/pdf=firefox.desktop;
 application/zip=org.gnome.FileRoller.desktop;appimagekit_69eb7bd7a21159f01b0d4c279a1528d0-osu_.desktop;libreoffice-calc.desktop;appimagekit_9666e0b7bf6455f5fd85c02800e3062e-osu_.desktop;
 text/plain=libreoffice-writer.desktop;appimagekit_69eb7bd7a21159f01b0d4c279a1528d0-osu_.desktop;
 image/png=org.kde.gwenview.desktop;satty.desktop;
-model/stl=appimagekit_bb95a2335f11d783b05870f7393609f6-UltiMaker_Cura.desktop;
+model/stl=appimagekit_bb95a2335f11d783b05870f7393609f6-UltiMaker_Cura.desktop;appimagekit_17083281813b235ce067219863620499-UltiMaker_Cura.desktop;
 image/jpeg=satty.desktop;mirage.desktop;
 application/x-zerosize=libreoffice-startcenter.desktop;libreoffice-writer.desktop;
 application/octet-stream=realm-studio.desktop;
@@ -31,7 +33,7 @@ x-scheme-handler/mid=userapp-Betterbird-EZZYV3.desktop;userapp-Thunderbird-9FFMQ
 application/x-bat=libreoffice-writer.desktop;wine.desktop;
 text/markdown=libreoffice-writer.desktop;
 text/x-matlab=libreoffice-writer.desktop;
-text/x.gcode=libreoffice-writer.desktop;
-application/json=libreoffice-writer.desktop;
+text/x.gcode=libreoffice-writer.desktop;appimagekit_17083281813b235ce067219863620499-UltiMaker_Cura.desktop;
+application/json=firefox.desktop;libreoffice-writer.desktop;
 message/rfc822=userapp-Betterbird-EZZYV3.desktop;
 x-scheme-handler/net.thunderbird=userapp-Betterbird-WKHYV3.desktop;

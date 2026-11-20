@@ -8,7 +8,7 @@ hl.monitor({
 
 hl.monitor({
 	output = "",
-	mode = "highrr",
+	mode = "1920x1080@60",
 	position = "auto",
 	scale = "1",
 	mirror = "",
